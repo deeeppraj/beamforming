@@ -1,0 +1,121 @@
+-------------------------------------
+| Tool Version : Vivado v.2025.2
+| Date         : Sat Jun 27 23:37:00 2026
+| Host         : Deepraj
+| Device       : xcvc1902-vsva2197-2MP-E-S
+-------------------------------------
+
+For more information on clockInfo.txt clock routing debug file see https://adaptivesupport.amd.com/s/article/000035660?language=en_US
+
+********************************
+All Clocks With User Constraints
+********************************
+No user input conflicts found
+
+***********************
+Number Of Global Clocks
+***********************
+Number of global clocks: 2
+	Number of BUFGCE: 1
+	Number of BUFGCE_HDIO: 0
+	Number of BUFGCTRL: 0
+	Number of BUFGCE_DIV: 0
+	Number of BUFG_GT: 0
+	Number of BUFG_PS: 1
+	Number of BUFG_FABRIC: 0
+
+
+**************************************
+Clock Nets/Source Overview (CRP Input)
+**************************************
+Clock 1: mvdrr_i/clk_wizard_0/inst/clock_primitive_inst/clk_out1
+	Clock source type: BUFGCE
+	Clock source region: X8Y0
+	Clock regions with fixed/placed loads: X0Y1 
+	Initial load regions: X0Y1 X1Y1 X2Y1 X2Y2 X3Y1 X3Y2 X4Y1 X4Y2 X5Y1 X5Y2 X6Y1 X7Y1 
+	Number of loads: 45342
+Clock 2: mvdrr_i/versal_cips_0/inst/pspmc_0/inst/pl0_ref_clk
+	Clock source type: BUFG_PS fixed to track 6
+	Clock source region: X1Y1
+	Clock regions with fixed/placed loads: X8Y0 
+	Initial load regions: X8Y0 
+	Number of loads: 1
+
+
+***************************************
+Validating Clocks With User Constraints:
+***************************************
+No clocks with user constraints found
+
+*****************
+Tool Constraints:
+*****************
+No tool constraints found
+
+
+
+*********************************
+Clock Routing & Distribution Info
+*********************************
+clock name: mvdrr_i/clk_wizard_0/inst/clock_primitive_inst/clk_out1
+  Source: X8Y0
+  VR/Distribution Track: 11
+  HR Track: 11
+  HR regions: X5Y0, X6Y0, X7Y0, X8Y0
+  VR regions: X5Y0, X3Y1
+  Root: X3Y1
+  VD regions: X3Y1, X3Y2, X3Y3, X3Y4
+  HD regions: X0Y1, X0Y2, X0Y3, X0Y4, X1Y1, X1Y2, X1Y3, X1Y4, X2Y1, X2Y2, X2Y3, X2Y4, X3Y1, X3Y2, X3Y3, X3Y4, X4Y1, X4Y2, X4Y3, X4Y4, X5Y1, X5Y2, X5Y3, X5Y4, X6Y1, X6Y2, X6Y3, X6Y4, X7Y1, X7Y2, X7Y3, X7Y4, X8Y1, X8Y2, X8Y3, X8Y4, X9Y1, X9Y2, X9Y3, X9Y4
+
+clock name: mvdrr_i/versal_cips_0/inst/pspmc_0/inst/pl0_ref_clk
+  Source: X1Y1
+  VR/Distribution Track: 23
+  HR Track: 6
+  HR regions: X1Y1, X2Y1, X3Y1, X4Y1, X5Y1, X6Y1, X7Y1
+  VR regions: X7Y1
+  Root: X7Y1
+  VD regions: X7Y0, X7Y1, X7Y2, X7Y3, X7Y4
+  HD regions: X0Y0, X0Y1, X0Y2, X0Y3, X0Y4, X1Y0, X1Y1, X1Y2, X1Y3, X1Y4, X2Y0, X2Y1, X2Y2, X2Y3, X2Y4, X3Y0, X3Y1, X3Y2, X3Y3, X3Y4, X4Y0, X4Y1, X4Y2, X4Y3, X4Y4, X5Y0, X5Y1, X5Y2, X5Y3, X5Y4, X6Y0, X6Y1, X6Y2, X6Y3, X6Y4, X7Y0, X7Y1, X7Y2, X7Y3, X7Y4, X8Y0, X8Y1, X8Y2, X8Y3, X8Y4, X9Y0, X9Y1, X9Y2, X9Y3, X9Y4, X10Y0, X11Y0
+
+
+Number of clock sources in each region:
+#BUFGCE, #BUFGCE_DIV, #BUFGCTRL, #BUFG_GT, #BUFG_PS, #BUFG_FABRIC, #BUFGCE_HDIO
+   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Y5| 0, 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0, 0|
+   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Y4| 0, 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0, 0|                   X|                   X|
+   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Y3| 0, 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0, 0|                   X|                   X|
+   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Y2| 0, 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0, 0|                   X|                   X|
+   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Y1| 0, 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 1, 0, 0| 0, 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0, 0|                   X|                   X|
+   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Y0| 0, 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0, 0| 1, 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0, 0|
+   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+              X0                   X1                   X2                   X3                   X4                   X5                   X6                   X7                   X8                   X9                  X10                  X11       
+
+
+**************************************************************
+Clock Routing & Distribution Info After Depositing Clock Trees
+**************************************************************
+Clock name: mvdrr_i/clk_wizard_0/inst/clock_primitive_inst/clk_out1
+Clock source: X8Y0
+VR/Distribution Track: 11
+HR Track: 11
+Clock root: X3Y1
+Clock expansion window: CLOCKREGION_X0Y1:CLOCKREGION_X7Y2
+Clock region(s) of placed loads: X0Y1 X1Y1 X2Y1 X2Y2 X3Y1 X3Y2 X4Y1 X4Y2 X5Y1 X5Y2 X6Y1 X7Y1 
+Number of loads: 57210
+
+
+Clock name: mvdrr_i/versal_cips_0/inst/pspmc_0/inst/pl0_ref_clk
+Clock source: X1Y1
+VR/Distribution Track: 23
+HR Track: 6
+Clock root: X7Y2
+Clock expansion window: CLOCKREGION_X0Y1:CLOCKREGION_X9Y4
+Clock region(s) of placed loads: X8Y0 
+Number of loads: 1
+
+

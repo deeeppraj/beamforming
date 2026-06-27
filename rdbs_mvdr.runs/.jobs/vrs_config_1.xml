@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="mvdrr_axi_dma_0_0_synth_1" LaunchDir="C:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.runs/mvdrr_axi_dma_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mvdrr_axi_noc_0_0_synth_1" LaunchDir="C:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.runs/mvdrr_axi_noc_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mvdrr_clk_wizard_0_0_synth_1" LaunchDir="C:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.runs/mvdrr_clk_wizard_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mvdrr_covariance_estimation_0_0_synth_1" LaunchDir="C:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.runs/mvdrr_covariance_estimation_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mvdrr_mvdr_weights_0_0_synth_1" LaunchDir="C:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.runs/mvdrr_mvdr_weights_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mvdrr_proc_sys_reset_0_0_synth_1" LaunchDir="C:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.runs/mvdrr_proc_sys_reset_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mvdrr_rdbs_kernel_0_0_synth_1" LaunchDir="C:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.runs/mvdrr_rdbs_kernel_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mvdrr_smartconnect_0_0_synth_1" LaunchDir="C:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.runs/mvdrr_smartconnect_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mvdrr_smartconnect_1_0_synth_1" LaunchDir="C:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.runs/mvdrr_smartconnect_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+		<Parameter Name="general.shortenLongPath" Val="true" Type="bool"/>
+		<Parameter Name="general.usePosixSpawnForFork" Val="true" Type="bool"/>
+	</Parameters>
+	<ProductInfo Name="vivado"/>
+</Runs>
+

@@ -1,0 +1,1749 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Sat Jun 27 23:23:27 2026
+# Process ID         : 8952
+# Current directory  : C:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.runs/mvdrr_rdbs_kernel_0_0_synth_1
+# Command line       : vivado.exe -log mvdrr_rdbs_kernel_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mvdrr_rdbs_kernel_0_0.tcl
+# Log file           : C:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.runs/mvdrr_rdbs_kernel_0_0_synth_1/mvdrr_rdbs_kernel_0_0.vds
+# Journal file       : C:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.runs/mvdrr_rdbs_kernel_0_0_synth_1\vivado.jou
+# Running On         : Deepraj
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i5-11320H @ 3.20GHz
+# CPU Frequency      : 3187 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 16952 MB
+# Swap memory        : 9731 MB
+# Total Virtual      : 26683 MB
+# Available Virtual  : 9479 MB
+#-----------------------------------------------------------
+source mvdrr_rdbs_kernel_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 572.621 ; gain = 257.820
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Deepraj/Desktop/WORK/istrac/ip/covariance_kernel'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Deepraj/Desktop/WORK/istrac/ip/mvdr_kernel'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Deepraj/Desktop/WORK/istrac/ip/rdbs_kernel'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AMDDesignTools/2025.2/Vivado/data/ip'.
+Command: synth_design -top mvdrr_rdbs_kernel_0_0 -part xcvc1902-vsva2197-2MP-e-S -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcvc1902'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcvc1902'
+INFO: [Device 21-403] Loading part xcvc1902-vsva2197-2MP-e-S
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 9772
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1912.633 ; gain = 328.496
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'mvdrr_rdbs_kernel_0_0' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_rdbs_kernel_0_0/synth/mvdrr_rdbs_kernel_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'rdbs_kernel' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel.v:9]
+INFO: [Synth 8-6157] synthesizing module 'rdbs_kernel_rdbs_kernel_stream_axis_data_t_0_stream_axis_data_t_0_int_w_imag_RAM_AUTO_1R1W' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_stream_axis_data_t_0_stream_axis_data_t_0_int_w_imag_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-3876] $readmem data file './rdbs_kernel_rdbs_kernel_stream_axis_data_t_0_stream_axis_data_t_0_int_w_imag_RAM_AUTO_1R1W.dat' is read successfully [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_stream_axis_data_t_0_stream_axis_data_t_0_int_w_imag_RAM_AUTO_1R1W.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'rdbs_kernel_rdbs_kernel_stream_axis_data_t_0_stream_axis_data_t_0_int_w_imag_RAM_AUTO_1R1W' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_stream_axis_data_t_0_stream_axis_data_t_0_int_w_imag_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'rdbs_kernel_rdbs_kernel_Pipeline_INIT_COEFFS_VITIS_LOOP_33_1' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_INIT_COEFFS_VITIS_LOOP_33_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'rdbs_kernel_rdbs_kernel_Pipeline_INIT_COEFFS_VITIS_LOOP_33_1_W_H_IMAG_F_ROM_AUTO_1R' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_INIT_COEFFS_VITIS_LOOP_33_1_W_H_IMAG_F_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './rdbs_kernel_rdbs_kernel_Pipeline_INIT_COEFFS_VITIS_LOOP_33_1_W_H_IMAG_F_ROM_AUTO_1R.dat' is read successfully [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_INIT_COEFFS_VITIS_LOOP_33_1_W_H_IMAG_F_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'rdbs_kernel_rdbs_kernel_Pipeline_INIT_COEFFS_VITIS_LOOP_33_1_W_H_IMAG_F_ROM_AUTO_1R' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_INIT_COEFFS_VITIS_LOOP_33_1_W_H_IMAG_F_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'rdbs_kernel_rdbs_kernel_Pipeline_INIT_COEFFS_VITIS_LOOP_33_1_W_H_REAL_F_ROM_AUTO_1R' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_INIT_COEFFS_VITIS_LOOP_33_1_W_H_REAL_F_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './rdbs_kernel_rdbs_kernel_Pipeline_INIT_COEFFS_VITIS_LOOP_33_1_W_H_REAL_F_ROM_AUTO_1R.dat' is read successfully [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_INIT_COEFFS_VITIS_LOOP_33_1_W_H_REAL_F_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'rdbs_kernel_rdbs_kernel_Pipeline_INIT_COEFFS_VITIS_LOOP_33_1_W_H_REAL_F_ROM_AUTO_1R' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_INIT_COEFFS_VITIS_LOOP_33_1_W_H_REAL_F_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'rdbs_kernel_fpext_32ns_64_1_no_dsp_1' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_fpext_32ns_64_1_no_dsp_1.v:9]
+INFO: [Synth 8-638] synthesizing module 'rdbs_kernel_fpext_32ns_64_1_no_dsp_1_ip' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_rdbs_kernel_0_0/hdl/ip/rdbs_kernel_fpext_32ns_64_1_no_dsp_1_ip/synth/rdbs_kernel_fpext_32ns_64_1_no_dsp_1_ip.vhd:68]
+	Parameter C_XDEVICEFAMILY bound to: versal - type: string 
+	Parameter C_PART bound to: xcvc1902-vsva2197-2MP-e-S - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 1 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 64 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 0 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 0 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 0 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_21' declared at 'c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_rdbs_kernel_0_0/hdl/ip/rdbs_kernel_fpext_32ns_64_1_no_dsp_1_ip/hdl/floating_point_v7_1_vh_rfs.vhd:93266' bound to instance 'U0' of component 'floating_point_v7_1_21' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_rdbs_kernel_0_0/hdl/ip/rdbs_kernel_fpext_32ns_64_1_no_dsp_1_ip/synth/rdbs_kernel_fpext_32ns_64_1_no_dsp_1_ip.vhd:203]
+INFO: [Synth 8-256] done synthesizing module 'rdbs_kernel_fpext_32ns_64_1_no_dsp_1_ip' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_rdbs_kernel_0_0/hdl/ip/rdbs_kernel_fpext_32ns_64_1_no_dsp_1_ip/synth/rdbs_kernel_fpext_32ns_64_1_no_dsp_1_ip.vhd:68]
+INFO: [Synth 8-6155] done synthesizing module 'rdbs_kernel_fpext_32ns_64_1_no_dsp_1' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_fpext_32ns_64_1_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'rdbs_kernel_sparsemux_9_3_16_1_1' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_sparsemux_9_3_16_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'rdbs_kernel_sparsemux_9_3_16_1_1' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_sparsemux_9_3_16_1_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'rdbs_kernel_flow_control_loop_pipe_sequential_init' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'rdbs_kernel_flow_control_loop_pipe_sequential_init' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'rdbs_kernel_rdbs_kernel_Pipeline_INIT_COEFFS_VITIS_LOOP_33_1' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_INIT_COEFFS_VITIS_LOOP_33_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'rdbs_kernel_rdbs_kernel_Pipeline_READ_INPUT' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_READ_INPUT.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'rdbs_kernel_rdbs_kernel_Pipeline_READ_INPUT' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_READ_INPUT.v:9]
+INFO: [Synth 8-6157] synthesizing module 'rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:9]
+INFO: [Synth 8-6157] synthesizing module 'rdbs_kernel_mul_16s_16s_32_1_1' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_mul_16s_16s_32_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'rdbs_kernel_mul_16s_16s_32_1_1' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_mul_16s_16s_32_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1.v:45]
+INFO: [Synth 8-6157] synthesizing module 'rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1.v:45]
+INFO: [Synth 8-6157] synthesizing module 'rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1.v:45]
+INFO: [Synth 8-6157] synthesizing module 'rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:9]
+INFO: [Synth 8-6157] synthesizing module 'rdbs_kernel_control_s_axi' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_control_s_axi.v:9]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_control_s_axi.v:204]
+INFO: [Synth 8-6155] done synthesizing module 'rdbs_kernel_control_s_axi' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_control_s_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'rdbs_kernel_regslice_both' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'rdbs_kernel_regslice_both' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'rdbs_kernel' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'mvdrr_rdbs_kernel_0_0' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_rdbs_kernel_0_0/synth/mvdrr_rdbs_kernel_0_0.v:53]
+INFO: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_control_s_axi.v:265]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-7129] Port AWADDR[1] in module rdbs_kernel_control_s_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port AWADDR[0] in module rdbs_kernel_control_s_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port rst in module rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rst in module rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port x_in_TDATA[63] in module rdbs_kernel_rdbs_kernel_Pipeline_READ_INPUT is either unconnected or has no load
+INFO: [Synth 8-7129] Port x_in_TDATA[62] in module rdbs_kernel_rdbs_kernel_Pipeline_READ_INPUT is either unconnected or has no load
+INFO: [Synth 8-7129] Port x_in_TDATA[61] in module rdbs_kernel_rdbs_kernel_Pipeline_READ_INPUT is either unconnected or has no load
+INFO: [Synth 8-7129] Port x_in_TDATA[60] in module rdbs_kernel_rdbs_kernel_Pipeline_READ_INPUT is either unconnected or has no load
+INFO: [Synth 8-7129] Port x_in_TDATA[59] in module rdbs_kernel_rdbs_kernel_Pipeline_READ_INPUT is either unconnected or has no load
+INFO: [Synth 8-7129] Port x_in_TDATA[58] in module rdbs_kernel_rdbs_kernel_Pipeline_READ_INPUT is either unconnected or has no load
+INFO: [Synth 8-7129] Port x_in_TDATA[57] in module rdbs_kernel_rdbs_kernel_Pipeline_READ_INPUT is either unconnected or has no load
+INFO: [Synth 8-7129] Port x_in_TDATA[56] in module rdbs_kernel_rdbs_kernel_Pipeline_READ_INPUT is either unconnected or has no load
+INFO: [Synth 8-7129] Port x_in_TDATA[55] in module rdbs_kernel_rdbs_kernel_Pipeline_READ_INPUT is either unconnected or has no load
+INFO: [Synth 8-7129] Port x_in_TDATA[54] in module rdbs_kernel_rdbs_kernel_Pipeline_READ_INPUT is either unconnected or has no load
+INFO: [Synth 8-7129] Port x_in_TDATA[53] in module rdbs_kernel_rdbs_kernel_Pipeline_READ_INPUT is either unconnected or has no load
+INFO: [Synth 8-7129] Port x_in_TDATA[52] in module rdbs_kernel_rdbs_kernel_Pipeline_READ_INPUT is either unconnected or has no load
+INFO: [Synth 8-7129] Port x_in_TDATA[51] in module rdbs_kernel_rdbs_kernel_Pipeline_READ_INPUT is either unconnected or has no load
+INFO: [Synth 8-7129] Port x_in_TDATA[50] in module rdbs_kernel_rdbs_kernel_Pipeline_READ_INPUT is either unconnected or has no load
+INFO: [Synth 8-7129] Port x_in_TDATA[49] in module rdbs_kernel_rdbs_kernel_Pipeline_READ_INPUT is either unconnected or has no load
+INFO: [Synth 8-7129] Port x_in_TDATA[48] in module rdbs_kernel_rdbs_kernel_Pipeline_READ_INPUT is either unconnected or has no load
+INFO: [Synth 8-7129] Port x_in_TDATA[47] in module rdbs_kernel_rdbs_kernel_Pipeline_READ_INPUT is either unconnected or has no load
+INFO: [Synth 8-7129] Port x_in_TDATA[46] in module rdbs_kernel_rdbs_kernel_Pipeline_READ_INPUT is either unconnected or has no load
+INFO: [Synth 8-7129] Port x_in_TDATA[45] in module rdbs_kernel_rdbs_kernel_Pipeline_READ_INPUT is either unconnected or has no load
+INFO: [Synth 8-7129] Port x_in_TDATA[44] in module rdbs_kernel_rdbs_kernel_Pipeline_READ_INPUT is either unconnected or has no load
+INFO: [Synth 8-7129] Port x_in_TDATA[43] in module rdbs_kernel_rdbs_kernel_Pipeline_READ_INPUT is either unconnected or has no load
+INFO: [Synth 8-7129] Port x_in_TDATA[42] in module rdbs_kernel_rdbs_kernel_Pipeline_READ_INPUT is either unconnected or has no load
+INFO: [Synth 8-7129] Port x_in_TDATA[41] in module rdbs_kernel_rdbs_kernel_Pipeline_READ_INPUT is either unconnected or has no load
+INFO: [Synth 8-7129] Port x_in_TDATA[40] in module rdbs_kernel_rdbs_kernel_Pipeline_READ_INPUT is either unconnected or has no load
+INFO: [Synth 8-7129] Port x_in_TDATA[39] in module rdbs_kernel_rdbs_kernel_Pipeline_READ_INPUT is either unconnected or has no load
+INFO: [Synth 8-7129] Port x_in_TDATA[38] in module rdbs_kernel_rdbs_kernel_Pipeline_READ_INPUT is either unconnected or has no load
+INFO: [Synth 8-7129] Port x_in_TDATA[37] in module rdbs_kernel_rdbs_kernel_Pipeline_READ_INPUT is either unconnected or has no load
+INFO: [Synth 8-7129] Port x_in_TDATA[36] in module rdbs_kernel_rdbs_kernel_Pipeline_READ_INPUT is either unconnected or has no load
+INFO: [Synth 8-7129] Port x_in_TDATA[35] in module rdbs_kernel_rdbs_kernel_Pipeline_READ_INPUT is either unconnected or has no load
+INFO: [Synth 8-7129] Port x_in_TDATA[34] in module rdbs_kernel_rdbs_kernel_Pipeline_READ_INPUT is either unconnected or has no load
+INFO: [Synth 8-7129] Port x_in_TDATA[33] in module rdbs_kernel_rdbs_kernel_Pipeline_READ_INPUT is either unconnected or has no load
+INFO: [Synth 8-7129] Port x_in_TDATA[32] in module rdbs_kernel_rdbs_kernel_Pipeline_READ_INPUT is either unconnected or has no load
+INFO: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_11_viv__parameterized7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_11_viv__parameterized7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_11_viv__parameterized7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_11_viv__parameterized7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_11_viv__parameterized7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_11_viv__parameterized15 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_11_viv__parameterized15 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_11_viv__parameterized15 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_11_viv__parameterized15 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_11_viv__parameterized15 is either unconnected or has no load
+INFO: [Synth 8-7129] Port DEC_OP_STATE[11] in module flt_dec_op is either unconnected or has no load
+INFO: [Synth 8-7129] Port DEC_OP_STATE[10] in module flt_dec_op is either unconnected or has no load
+INFO: [Synth 8-7129] Port DEC_OP_STATE[9] in module flt_dec_op is either unconnected or has no load
+INFO: [Synth 8-7129] Port DEC_OP_STATE[8] in module flt_dec_op is either unconnected or has no load
+INFO: [Synth 8-7129] Port CLK in module flt_dec_op is either unconnected or has no load
+INFO: [Synth 8-7129] Port CE in module flt_dec_op is either unconnected or has no load
+INFO: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_11_viv__parameterized13 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_11_viv__parameterized13 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_11_viv__parameterized13 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_11_viv__parameterized13 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_11_viv__parameterized13 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_11_viv__parameterized3 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_11_viv__parameterized3 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_11_viv__parameterized3 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_11_viv__parameterized3 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_11_viv__parameterized3 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_11_viv__parameterized11 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_11_viv__parameterized11 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_11_viv__parameterized11 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_11_viv__parameterized11 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_11_viv__parameterized11 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_11_viv__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_11_viv__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_11_viv__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_11_viv__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_11_viv__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_11_viv__parameterized5 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_11_viv__parameterized5 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_11_viv__parameterized5 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_11_viv__parameterized5 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_11_viv__parameterized5 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_11_viv__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_11_viv__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_11_viv__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_11_viv__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_11_viv__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CARRYS_OUT[0] in module compare_eq_im is either unconnected or has no load
+INFO: [Synth 8-7129] Port A[31] in module special_detect is either unconnected or has no load
+INFO: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_11_viv is either unconnected or has no load
+INFO: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_11_viv is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_11_viv is either unconnected or has no load
+INFO: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_11_viv is either unconnected or has no load
+INFO: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_11_viv is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axis_result_tuser[0] in module floating_point_v7_1_21_viv is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axis_result_tlast in module floating_point_v7_1_21_viv is either unconnected or has no load
+INFO: [Synth 8-7129] Port aclken in module floating_point_v7_1_21_viv is either unconnected or has no load
+INFO: [Synth 8-7129] Port aresetn in module floating_point_v7_1_21_viv is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axis_a_tuser[0] in module floating_point_v7_1_21_viv is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axis_a_tlast in module floating_point_v7_1_21_viv is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axis_b_tvalid in module floating_point_v7_1_21_viv is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axis_b_tdata[31] in module floating_point_v7_1_21_viv is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axis_b_tdata[30] in module floating_point_v7_1_21_viv is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axis_b_tdata[29] in module floating_point_v7_1_21_viv is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axis_b_tdata[28] in module floating_point_v7_1_21_viv is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2198.902 ; gain = 614.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2198.902 ; gain = 614.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2198.902 ; gain = 614.766
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.608 . Memory (MB): peak = 2198.902 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Constraints 18-6358] GCLK_DESKEW_DEFAULT not specified in Clock Expansion Window constraints config file for device xcvc1902.  GCLK Deskew mode will be Off and cannot be enabled via GCLK_DESKEW override.
+INFO: [Constraints 18-5720] The default GCLK Deskew mode is Off.
+INFO: [Device 21-9335] Optimized delay calculation is enabled for this device.
+INFO: [Constraints 18-13227] Created floorplan with Advanced Flow Feature Set
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_rdbs_kernel_0_0/constraints/rdbs_kernel_ooc.xdc] for cell 'inst'
+create_clock: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2448.367 ; gain = 82.195
+Finished Parsing XDC File [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_rdbs_kernel_0_0/constraints/rdbs_kernel_ooc.xdc] for cell 'inst'
+Parsing XDC File [C:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.runs/mvdrr_rdbs_kernel_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.runs/mvdrr_rdbs_kernel_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 2449.203 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.821 . Memory (MB): peak = 2449.203 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 2449.203 ; gain = 865.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcvc1902-vsva2197-2MP-e-S
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 2449.203 ; gain = 865.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 2449.203 ; gain = 865.066
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'rdbs_kernel_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'rdbs_kernel_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'rdbs_kernel_regslice_both'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-6904] The RAM "rdbs_kernel_rdbs_kernel_stream_axis_data_t_0_stream_axis_data_t_0_int_w_imag_RAM_AUTO_1R1W:/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'rdbs_kernel_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'rdbs_kernel_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+*
+                    ZERO |                               01 |                               10
+                     ONE |                               11 |                               11
+                     TWO |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'rdbs_kernel_regslice_both'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 2449.203 ; gain = 865.066
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'rdbs_kernel_fpext_32ns_64_1_no_dsp_1_ip:/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized2) to 'rdbs_kernel_fpext_32ns_64_1_no_dsp_1_ip:/U0/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'rdbs_kernel_fpext_32ns_64_1_no_dsp_1_ip:/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized2) to 'rdbs_kernel_fpext_32ns_64_1_no_dsp_1_ip:/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'rdbs_kernel_fpext_32ns_64_1_no_dsp_1_ip:/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized2) to 'rdbs_kernel_fpext_32ns_64_1_no_dsp_1_ip:/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1968 (col length:164)
+BRAMs: 1934 (col length: RAMB18 168 RAMB36 84)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3936] Found unconnected internal register 'rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '52' to '32' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1.v:37]
+WARNING: [Synth 8-3936] Found unconnected internal register 'rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '51' to '32' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1.v:31]
+WARNING: [Synth 8-3936] Found unconnected internal register 'rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '52' to '33' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1.v:37]
+WARNING: [Synth 8-3936] Found unconnected internal register 'rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '51' to '33' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1.v:31]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_284_reg_11974_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7106]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_287_reg_11981_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7108]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_272_reg_11940_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7102]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_275_reg_11947_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7104]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_212_reg_11726_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7074]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_215_reg_11733_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7076]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_206_reg_11698_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7070]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_209_reg_11712_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7072]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_200_reg_11670_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7066]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_203_reg_11684_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7068]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_260_reg_11906_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7098]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_263_reg_11913_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7100]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_254_reg_11878_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7094]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_257_reg_11892_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7096]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_248_reg_11850_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7090]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_251_reg_11864_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7092]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_236_reg_11816_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7086]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_239_reg_11823_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7088]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_230_reg_11788_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7082]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_233_reg_11802_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7084]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_224_reg_11760_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7078]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_227_reg_11774_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7080]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_164_reg_11524_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7062]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_167_reg_11531_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7064]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_158_reg_11496_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7058]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_161_reg_11510_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7060]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_152_reg_11468_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7054]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_155_reg_11482_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7056]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_194_reg_11642_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7202]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_188_reg_11614_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7198]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_197_reg_11656_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7204]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_191_reg_11628_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7200]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_182_reg_11586_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7194]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_176_reg_11558_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7190]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_185_reg_11600_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7196]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_179_reg_11572_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7192]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_146_reg_11440_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7186]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_140_reg_11412_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7182]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_149_reg_11454_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7188]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_143_reg_11426_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7184]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_134_reg_11384_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7178]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_131_reg_11370_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7176]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_137_reg_11398_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7180]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_128_reg_11356_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7174]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_285_reg_11197_pp0_iter2_reg_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7107]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_288_reg_11209_pp0_iter2_reg_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7109]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_273_reg_11145_pp0_iter2_reg_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7103]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_276_reg_11157_pp0_iter2_reg_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7105]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_207_reg_11705_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7071]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_213_reg_10909_pp0_iter2_reg_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7075]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_216_reg_10921_pp0_iter2_reg_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7077]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_201_reg_11677_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7067]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_210_reg_11719_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7073]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_204_reg_11691_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7069]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_255_reg_11885_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7095]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_261_reg_11093_pp0_iter2_reg_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7099]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_264_reg_11105_pp0_iter2_reg_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7101]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_249_reg_11857_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7091]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_258_reg_11899_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7097]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_252_reg_11871_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7093]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_231_reg_11795_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7083]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_237_reg_11001_pp0_iter2_reg_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7087]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_240_reg_11013_pp0_iter2_reg_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7089]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_225_reg_11767_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7079]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_234_reg_11809_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7085]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_228_reg_11781_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7081]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_159_reg_11503_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7059]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_165_reg_10737_pp0_iter2_reg_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7063]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_168_reg_10749_pp0_iter2_reg_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7065]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_153_reg_11475_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7055]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_162_reg_11517_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7061]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_156_reg_11489_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7057]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_195_reg_11649_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7203]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_189_reg_11621_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7199]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_198_reg_11663_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7205]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_192_reg_11635_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7201]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_183_reg_11593_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7195]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_177_reg_11565_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7191]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_186_reg_11607_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7197]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_180_reg_11579_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7193]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_147_reg_11447_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7187]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_141_reg_11419_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7183]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_150_reg_11461_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7189]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_144_reg_11433_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7185]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_135_reg_11391_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7179]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_132_reg_11377_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7177]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_138_reg_11405_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7181]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_129_reg_11363_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:7175]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_314_reg_11328_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:6900]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_308_reg_11300_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:6895]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_317_reg_11342_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:6902]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_311_reg_11314_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:6898]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_290_reg_11216_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:6882]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_293_reg_11230_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:6884]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_302_reg_11272_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:6891]
+INFO: [Synth 8-3936] Found unconnected internal register 'sext_ln78_305_reg_11286_reg' and it is trimmed from '32' to '16' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/8726/hdl/verilog/rdbs_kernel_rdbs_kernel_Pipeline_BEAM_LOOP.v:6893]
+INFO: [Common 17-14] Message 'Synth 8-3936' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6904] The RAM "inst/rdbs_kernel_stream_axis_data_t_0_stream_axis_data_t_0_int_w_imag_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/rdbs_kernel_stream_axis_data_t_0_stream_axis_data_t_0_int_w_real_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/rdbs_kernel_stream_axis_data_t_0_stream_axis_data_t_0_int_w_real_1_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/rdbs_kernel_stream_axis_data_t_0_stream_axis_data_t_0_int_w_real_2_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/rdbs_kernel_stream_axis_data_t_0_stream_axis_data_t_0_int_w_real_3_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/rdbs_kernel_stream_axis_data_t_0_stream_axis_data_t_0_int_w_real_4_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/rdbs_kernel_stream_axis_data_t_0_stream_axis_data_t_0_int_w_real_5_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/rdbs_kernel_stream_axis_data_t_0_stream_axis_data_t_0_int_w_real_6_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/rdbs_kernel_stream_axis_data_t_0_stream_axis_data_t_0_int_w_real_7_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/rdbs_kernel_stream_axis_data_t_0_stream_axis_data_t_0_int_w_real_8_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/rdbs_kernel_stream_axis_data_t_0_stream_axis_data_t_0_int_w_real_9_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_real_10_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_real_11_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_real_12_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_real_13_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_real_14_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_real_15_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_real_16_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_real_17_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_real_18_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_real_19_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_real_20_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_real_21_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_real_22_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_real_23_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_real_24_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_real_25_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_real_26_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_real_27_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_real_28_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_real_29_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_real_30_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_real_31_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_real_32_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_real_33_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_real_34_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_real_35_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_real_36_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_real_37_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_real_38_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_real_39_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_real_40_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_real_41_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_real_42_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_real_43_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_real_44_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_real_45_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_real_46_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_real_47_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_real_48_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_real_49_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_real_50_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_real_51_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_real_52_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_real_53_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_real_54_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_real_55_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_real_56_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_real_57_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_real_58_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_real_59_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_real_60_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_real_61_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_real_62_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_real_63_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/rdbs_kernel_stream_axis_data_t_0_stream_axis_data_t_0_int_w_imag_10_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/rdbs_kernel_stream_axis_data_t_0_stream_axis_data_t_0_int_w_imag_11_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/rdbs_kernel_stream_axis_data_t_0_stream_axis_data_t_0_int_w_imag_12_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/rdbs_kernel_stream_axis_data_t_0_stream_axis_data_t_0_int_w_imag_13_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/rdbs_kernel_stream_axis_data_t_0_stream_axis_data_t_0_int_w_imag_14_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/rdbs_kernel_stream_axis_data_t_0_stream_axis_data_t_0_int_w_imag_15_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/rdbs_kernel_stream_axis_data_t_0_stream_axis_data_t_0_int_w_imag_16_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/rdbs_kernel_stream_axis_data_t_0_stream_axis_data_t_0_int_w_imag_17_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/rdbs_kernel_stream_axis_data_t_0_stream_axis_data_t_0_int_w_imag_18_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_imag_10_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_imag_11_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_imag_12_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_imag_13_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_imag_14_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_imag_15_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_imag_16_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_imag_17_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_imag_18_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_imag_19_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_imag_20_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_imag_21_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_imag_22_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_imag_23_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_imag_24_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_imag_25_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_imag_26_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_imag_27_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_imag_28_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_imag_29_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_imag_30_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_imag_31_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_imag_32_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_imag_33_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/p_ZZ11rdbs_kernelRN3hls6streamI11axis_data_tLi0EEES3_iE6w_imag_34_U/ram_reg" of size (depth=21 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Common 17-14] Message 'Synth 8-6904' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3332] Sequential element (control_s_axi_U/FSM_onehot_wstate_reg[0]) is unused and will be removed from module rdbs_kernel.
+INFO: [Synth 8-3332] Sequential element (control_s_axi_U/FSM_onehot_rstate_reg[0]) is unused and will be removed from module rdbs_kernel.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:20 ; elapsed = 00:01:23 . Memory (MB): peak = 2815.715 ; gain = 1231.578
+---------------------------------------------------------------------------------
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_81 : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_83 : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_84 : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_87 : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_89 : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_8a : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_8b : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_8d : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_8f : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_90 : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_91 : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_93 : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_95 : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_96 : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_97 : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_99 : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_9b : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_9c : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_9d : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_9f : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_a1 : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_a2 : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_a3 : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_a5 : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_a7 : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_a9 : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_ab : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_ad : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_af : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_b1 : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_b3 : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_b5 : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_b7 : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_b9 : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_bb : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_bd : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_bf : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_c1 : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_c3 : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_c5 : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_c7 : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_c9 : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_cb : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_cd : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_d1 : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_d3 : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_d5 : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_d7 : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_d9 : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_db : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_dd : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_df : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_e1 : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_e3 : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_e5 : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_e7 : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_eb : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_ed : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_ef : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_f1 : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_f5 : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_f7 : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_f9 : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_fb : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_100 : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_101 : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_102 : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_85 : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_88 : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_8c : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_8e : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_92 : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_94 : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_98 : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_9a : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_9e : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_a0 : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_a4 : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_a6 : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_a8 : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_aa : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_ac : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_ae : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_b0 : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_b2 : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_b4 : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_b6 : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_b8 : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_ba : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_bc : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_be : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_c0 : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_c2 : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_c4 : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_c6 : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_c8 : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_ca : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_cc : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_ce : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_cf : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_d0 : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_d2 : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_d4 : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_d6 : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_d8 : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_da : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_dc : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_de : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_e0 : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_e2 : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_e4 : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_e6 : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_e8 : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_e9 : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_ea : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_ec : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_ee : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_f0 : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_f2 : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_f3 : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_f4 : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_f6 : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_f8 : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_fa : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_fc : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_fd : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_fe : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_ff : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  tmp_product_0 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_10 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_11 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_12 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_13 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_14 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_15 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_16 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_17 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_18 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_19 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_1a : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_1b : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_1c : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_1d : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_1e : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_1f : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_2 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_20 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_21 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_22 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_23 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_24 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_25 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_26 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_27 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_28 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_29 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_2a : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_2b : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_2c : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_2d : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_2e : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_2f : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_3 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_30 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_31 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_32 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_33 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_34 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_35 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_36 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_37 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_38 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_39 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_3a : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_3b : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_3c : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_3d : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_3e : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_3f : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_4 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_40 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_41 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_42 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_43 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_44 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_45 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_46 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_47 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_48 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_49 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_4a : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_4b : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_4c : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_4d : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_4e : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_4f : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_5 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_50 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_51 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_52 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_53 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_54 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_55 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_56 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_57 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_58 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_59 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_5a : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_5b : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_5c : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_5d : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_5e : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_5f : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_6 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_60 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_61 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_62 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_63 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_64 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_65 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_66 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_67 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_68 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_69 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_6a : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_6b : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_6c : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_6d : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_6e : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_6f : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_7 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_70 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_71 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_72 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_73 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_74 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_75 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_76 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_77 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_78 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_79 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_7a : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_7b : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_7c : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_7d : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_7e : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_7f : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_8 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_80 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_9 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_a : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_b : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_c : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_d : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_e : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_f : 0 0 : 1635 1635 : Used 1 time 0
+WARNING: [Synth 8-5730] RAM inst/i_0 got removed due to cross hierarchy optimization. 
+WARNING: [Synth 8-5730] RAM inst/i_1 got removed due to cross hierarchy optimization. 
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:52 ; elapsed = 00:01:56 . Memory (MB): peak = 3363.457 ; gain = 1779.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:11 ; elapsed = 00:02:15 . Memory (MB): peak = 3588.926 ; gain = 2004.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `floating_point_v7_1_21_viv__2`
+   Worst Slack before retiming is 0.210 ns and worst slack after retiming is 0.210 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `floating_point_v7_1_21_viv__2' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `floating_point_v7_1_21__2`
+   Worst Slack before retiming is 0.210 ns and worst slack after retiming is 0.210 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `floating_point_v7_1_21__2' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_fpext_32ns_64_1_no_dsp_1_ip__2`
+   Worst Slack before retiming is 0.210 ns and worst slack after retiming is 0.210 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_fpext_32ns_64_1_no_dsp_1_ip__2' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `floating_point_v7_1_21_viv`
+   Worst Slack before retiming is 0.210 ns and worst slack after retiming is 0.210 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `floating_point_v7_1_21_viv' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `floating_point_v7_1_21`
+   Worst Slack before retiming is 0.210 ns and worst slack after retiming is 0.210 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `floating_point_v7_1_21' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_fpext_32ns_64_1_no_dsp_1_ip`
+   Worst Slack before retiming is 0.210 ns and worst slack after retiming is 0.210 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_fpext_32ns_64_1_no_dsp_1_ip' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__1`
+   Worst Slack before retiming is 0.210 ns and worst slack after retiming is 0.210 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__1' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__2`
+   Worst Slack before retiming is 0.210 ns and worst slack after retiming is 0.210 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__2' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__3`
+   Worst Slack before retiming is 0.210 ns and worst slack after retiming is 0.210 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__3' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__4`
+   Worst Slack before retiming is 0.210 ns and worst slack after retiming is 0.210 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__4' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__5`
+   Worst Slack before retiming is 0.210 ns and worst slack after retiming is 0.210 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__5' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__6`
+   Worst Slack before retiming is 0.210 ns and worst slack after retiming is 0.210 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__6' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__7`
+   Worst Slack before retiming is 0.210 ns and worst slack after retiming is 0.210 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__7' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__8`
+   Worst Slack before retiming is 0.210 ns and worst slack after retiming is 0.210 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__8' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__9`
+   Worst Slack before retiming is 0.210 ns and worst slack after retiming is 0.210 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__9' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__10`
+   Worst Slack before retiming is 0.210 ns and worst slack after retiming is 0.210 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__10' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__11`
+   Worst Slack before retiming is 0.210 ns and worst slack after retiming is 0.210 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__11' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__12`
+   Worst Slack before retiming is 0.210 ns and worst slack after retiming is 0.210 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__12' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__13`
+   Worst Slack before retiming is 0.210 ns and worst slack after retiming is 0.210 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__13' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__14`
+   Worst Slack before retiming is 0.210 ns and worst slack after retiming is 0.210 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__14' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__15`
+   Worst Slack before retiming is 0.210 ns and worst slack after retiming is 0.210 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__15' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__16`
+   Worst Slack before retiming is 0.210 ns and worst slack after retiming is 0.210 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__16' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__17`
+   Worst Slack before retiming is 0.210 ns and worst slack after retiming is 0.210 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__17' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__18`
+   Worst Slack before retiming is 0.210 ns and worst slack after retiming is 0.210 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__18' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__19`
+   Worst Slack before retiming is 0.210 ns and worst slack after retiming is 0.210 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__19' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__20`
+   Worst Slack before retiming is 0.210 ns and worst slack after retiming is 0.210 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__20' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__21`
+   Worst Slack before retiming is 0.210 ns and worst slack after retiming is 0.210 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__21' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__22`
+   Worst Slack before retiming is 0.210 ns and worst slack after retiming is 0.210 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__22' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__23`
+   Worst Slack before retiming is 0.210 ns and worst slack after retiming is 0.210 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__23' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__24`
+   Worst Slack before retiming is 0.210 ns and worst slack after retiming is 0.210 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__24' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__25`
+   Worst Slack before retiming is 0.210 ns and worst slack after retiming is 0.210 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__25' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__26`
+   Worst Slack before retiming is 0.210 ns and worst slack after retiming is 0.210 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__26' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__27`
+   Worst Slack before retiming is 0.210 ns and worst slack after retiming is 0.210 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__27' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__28`
+   Worst Slack before retiming is 0.210 ns and worst slack after retiming is 0.210 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__28' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__29`
+   Worst Slack before retiming is 0.210 ns and worst slack after retiming is 0.210 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__29' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__30`
+   Worst Slack before retiming is 0.210 ns and worst slack after retiming is 0.210 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__30' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__31`
+   Worst Slack before retiming is 0.210 ns and worst slack after retiming is 0.210 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__31' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__32`
+   Worst Slack before retiming is 0.210 ns and worst slack after retiming is 0.210 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__32' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__33`
+   Worst Slack before retiming is 0.210 ns and worst slack after retiming is 0.210 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__33' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__34`
+   Worst Slack before retiming is 0.210 ns and worst slack after retiming is 0.210 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__34' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__35`
+   Worst Slack before retiming is 0.210 ns and worst slack after retiming is 0.210 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__35' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__36`
+   Worst Slack before retiming is 0.210 ns and worst slack after retiming is 0.210 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__36' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__37`
+   Worst Slack before retiming is 0.210 ns and worst slack after retiming is 0.210 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__37' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__38`
+   Worst Slack before retiming is 0.210 ns and worst slack after retiming is 0.210 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__38' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__39`
+   Worst Slack before retiming is 0.210 ns and worst slack after retiming is 0.210 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__39' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__40`
+   Worst Slack before retiming is 0.210 ns and worst slack after retiming is 0.210 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__40' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__41`
+   Worst Slack before retiming is 0.210 ns and worst slack after retiming is 0.210 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__41' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__42`
+   Worst Slack before retiming is 0.210 ns and worst slack after retiming is 0.210 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__42' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__43`
+   Worst Slack before retiming is 0.210 ns and worst slack after retiming is 0.210 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__43' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__44`
+   Worst Slack before retiming is 0.210 ns and worst slack after retiming is 0.210 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `rdbs_kernel_mul_16s_16s_32_1_1__44' done
+
+
+INFO: [Common 17-14] Message 'Synth 8-5816' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Common 17-14] Message 'Synth 8-11328' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:31 ; elapsed = 00:02:36 . Memory (MB): peak = 3874.145 ; gain = 2290.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:39 ; elapsed = 00:02:44 . Memory (MB): peak = 3874.145 ; gain = 2290.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:39 ; elapsed = 00:02:44 . Memory (MB): peak = 3874.145 ; gain = 2290.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:42 ; elapsed = 00:02:47 . Memory (MB): peak = 3874.145 ; gain = 2290.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:42 ; elapsed = 00:02:47 . Memory (MB): peak = 3874.145 ; gain = 2290.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:43 ; elapsed = 00:02:48 . Memory (MB): peak = 3874.145 ; gain = 2290.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:43 ; elapsed = 00:02:48 . Memory (MB): peak = 3874.145 ; gain = 2290.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++--------------------------------------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                                       | DSP Mapping     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------------------------------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|rdbs_kernel_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
++--------------------------------------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------------------+------+
+|      |Cell              |Count |
++------+------------------+------+
+|1     |DSP_ALUADD        |   256|
+|2     |DSP_ALUMUX        |   256|
+|3     |DSP_ALUREG        |   256|
+|5     |DSP_A_B_DATA58    |   256|
+|7     |DSP_C_DATA58      |   256|
+|9     |DSP_MULTIPLIER58  |   256|
+|10    |DSP_M_DATA58      |   256|
+|12    |DSP_OUTPUT58      |   256|
+|14    |DSP_PATDET        |   256|
+|15    |DSP_PREADD58      |   256|
+|16    |DSP_PREADD_DATA58 |   256|
+|18    |DSP_SRCMX_OPTINV  |   256|
+|19    |LOOKAHEAD8        |   235|
+|23    |LUT1              |   109|
+|24    |LUT2              |   116|
+|25    |LUT3              |  4640|
+|26    |LUT4              |   147|
+|27    |LUT5              |  1704|
+|28    |LUT6              |   581|
+|29    |LUT6CY            |  1658|
+|30    |LUT6              |     5|
+|31    |RAM32X1S          |  2048|
+|32    |SRL16E            |     7|
+|33    |FDRE              | 16157|
+|34    |FDSE              |     5|
++------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:43 ; elapsed = 00:02:48 . Memory (MB): peak = 3874.145 ; gain = 2290.008
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:08 ; elapsed = 00:02:26 . Memory (MB): peak = 3874.145 ; gain = 2039.707
+Synthesis Optimization Complete : Time (s): cpu = 00:02:44 ; elapsed = 00:02:49 . Memory (MB): peak = 3874.145 ; gain = 2290.008
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.452 . Memory (MB): peak = 3874.145 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 3967 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 8 CPU seconds
+INFO: [Constraints 18-6358] GCLK_DESKEW_DEFAULT not specified in Clock Expansion Window constraints config file for device xcvc1902.  GCLK Deskew mode will be Off and cannot be enabled via GCLK_DESKEW override.
+INFO: [Constraints 18-5720] The default GCLK Deskew mode is Off.
+INFO: [Device 21-9335] Optimized delay calculation is enabled for this device.
+INFO: [Constraints 18-13227] Created floorplan with Advanced Flow Feature Set
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 3874.145 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3967 instances were transformed.
+  DSP58 => DSP58 (DSP_ALUADD, DSP_ALUMUX, DSP_ALUREG, DSP_A_B_DATA58, DSP_C_DATA58, DSP_MULTIPLIER58, DSP_M_DATA58, DSP_OUTPUT58, DSP_PATDET, DSP_PREADD58, DSP_PREADD_DATA58, DSP_SRCMX_OPTINV, VCC): 256 instances
+  LUT6CY => LUT6CY (LUTCY1, LUTCY2): 1658 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 5 instances
+  RAM32X1S => RAM32X1S (RAMS32): 2048 instances
+
+Synth Design complete | Checksum: f922bc00
+INFO: [Common 17-83] Releasing license: Synthesis
+591 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:03:22 ; elapsed = 00:03:30 . Memory (MB): peak = 3874.145 ; gain = 3212.242
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.066 . Memory (MB): peak = 3874.145 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.runs/mvdrr_rdbs_kernel_0_0_synth_1/mvdrr_rdbs_kernel_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP mvdrr_rdbs_kernel_0_0, cache-ID = be397be256674bd9
+INFO: [Coretcl 2-1174] Renamed 536 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.069 . Memory (MB): peak = 3874.145 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.runs/mvdrr_rdbs_kernel_0_0_synth_1/mvdrr_rdbs_kernel_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file mvdrr_rdbs_kernel_0_0_utilization_synth.rpt -pb mvdrr_rdbs_kernel_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Jun 27 23:27:27 2026...

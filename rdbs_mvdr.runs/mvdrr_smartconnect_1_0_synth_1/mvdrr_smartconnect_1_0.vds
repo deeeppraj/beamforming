@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Sat Jun 27 23:21:50 2026
+# Process ID         : 22320
+# Current directory  : C:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.runs/mvdrr_smartconnect_1_0_synth_1
+# Command line       : vivado.exe -log mvdrr_smartconnect_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mvdrr_smartconnect_1_0.tcl
+# Log file           : C:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.runs/mvdrr_smartconnect_1_0_synth_1/mvdrr_smartconnect_1_0.vds
+# Journal file       : C:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.runs/mvdrr_smartconnect_1_0_synth_1\vivado.jou
+# Running On         : Deepraj
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i5-11320H @ 3.20GHz
+# CPU Frequency      : 3187 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 16952 MB
+# Swap memory        : 9731 MB
+# Total Virtual      : 26683 MB
+# Available Virtual  : 9383 MB
+#-----------------------------------------------------------
+source mvdrr_smartconnect_1_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 571.859 ; gain = 258.758
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Deepraj/Desktop/WORK/istrac/ip/covariance_kernel'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Deepraj/Desktop/WORK/istrac/ip/mvdr_kernel'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Deepraj/Desktop/WORK/istrac/ip/rdbs_kernel'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AMDDesignTools/2025.2/Vivado/data/ip'.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP mvdrr_smartconnect_1_0, cache-ID = 4aa95eeb337b4b92.
+config_ip_cache: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 664.117 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Jun 27 23:22:15 2026...

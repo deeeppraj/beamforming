@@ -1,0 +1,1104 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Sat Jun 27 23:12:26 2026
+# Process ID         : 5980
+# Current directory  : C:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.runs/mvdrr_axi_noc_0_0_synth_1
+# Command line       : vivado.exe -log mvdrr_axi_noc_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mvdrr_axi_noc_0_0.tcl
+# Log file           : C:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.runs/mvdrr_axi_noc_0_0_synth_1/mvdrr_axi_noc_0_0.vds
+# Journal file       : C:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.runs/mvdrr_axi_noc_0_0_synth_1\vivado.jou
+# Running On         : Deepraj
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i5-11320H @ 3.20GHz
+# CPU Frequency      : 3187 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 16952 MB
+# Swap memory        : 5272 MB
+# Total Virtual      : 22224 MB
+# Available Virtual  : 4167 MB
+#-----------------------------------------------------------
+source mvdrr_axi_noc_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 572.094 ; gain = 256.469
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Deepraj/Desktop/WORK/istrac/ip/covariance_kernel'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Deepraj/Desktop/WORK/istrac/ip/mvdr_kernel'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Deepraj/Desktop/WORK/istrac/ip/rdbs_kernel'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AMDDesignTools/2025.2/Vivado/data/ip'.
+Command: synth_design -top mvdrr_axi_noc_0_0 -part xcvc1902-vsva2197-2MP-e-S -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcvc1902'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcvc1902'
+INFO: [Device 21-403] Loading part xcvc1902-vsva2197-2MP-e-S
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 12296
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 1933.445 ; gain = 330.156
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'pll0_locked', assumed default net type 'wire' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/rtl/bd_48f7_MC0_ddrc_0_phy_wrapper.sv:4032]
+INFO: [Synth 8-11241] undeclared symbol 'pll1_locked', assumed default net type 'wire' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/rtl/bd_48f7_MC0_ddrc_0_phy_wrapper.sv:4108]
+INFO: [Synth 8-11241] undeclared symbol 'pll2_locked', assumed default net type 'wire' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/rtl/bd_48f7_MC0_ddrc_0_phy_wrapper.sv:4180]
+INFO: [Synth 8-6157] synthesizing module 'mvdrr_axi_noc_0_0' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/synth/mvdrr_axi_noc_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_48f7' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/synth/bd_48f7.v:10]
+INFO: [Synth 8-6157] synthesizing module 'bd_48f7_MC0_ddrc_0' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/hdl/rtl/bd_48f7_MC0_ddrc_0.sv:67]
+INFO: [Synth 8-6157] synthesizing module 'bd_48f7_MC0_ddrc_0_wrapper' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/hdl/rtl/bd_48f7_MC0_ddrc_0_wrapper.sv:67]
+INFO: [Synth 8-6157] synthesizing module 'bd_48f7_MC0_ddrc_0_phy' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/bfm/bd_48f7_MC0_ddrc_0_phy.sv:68]
+INFO: [Synth 8-6157] synthesizing module 'bd_48f7_MC0_ddrc_0_phy_wrapper' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/rtl/bd_48f7_MC0_ddrc_0_phy_wrapper.sv:78]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS' [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:82819]
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS' (0#1) [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:82819]
+INFO: [Synth 8-6157] synthesizing module 'DDRMC' [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:40766]
+INFO: [Synth 8-6155] done synthesizing module 'DDRMC' (0#1) [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:40766]
+INFO: [Synth 8-6157] synthesizing module 'DDRMC_RIU' [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:46573]
+INFO: [Synth 8-6155] done synthesizing module 'DDRMC_RIU' (0#1) [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:46573]
+INFO: [Synth 8-6157] synthesizing module 'OBUF' [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:113520]
+INFO: [Synth 8-6155] done synthesizing module 'OBUF' (0#1) [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:113520]
+INFO: [Synth 8-6157] synthesizing module 'advanced_io_wizard_phy_v1_0_bank_wrapper' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:49]
+INFO: [Synth 8-6157] synthesizing module 'XPHY' [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:171787]
+INFO: [Synth 8-6155] done synthesizing module 'XPHY' (0#1) [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:171787]
+WARNING: [Synth 8-7071] port 'BISC_START_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_START_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7023] instance 'I_XPHY' of module 'XPHY' has 62 connections declared, but only 58 given [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+INFO: [Synth 8-6157] synthesizing module 'XPHY__parameterized0' [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:171787]
+INFO: [Synth 8-6155] done synthesizing module 'XPHY__parameterized0' (0#1) [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:171787]
+WARNING: [Synth 8-7071] port 'BISC_START_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_START_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7023] instance 'I_XPHY' of module 'XPHY' has 62 connections declared, but only 58 given [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_START_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_START_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7023] instance 'I_XPHY' of module 'XPHY' has 62 connections declared, but only 58 given [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_START_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_START_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7023] instance 'I_XPHY' of module 'XPHY' has 62 connections declared, but only 58 given [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_START_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_START_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7023] instance 'I_XPHY' of module 'XPHY' has 62 connections declared, but only 58 given [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_START_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_START_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7023] instance 'I_XPHY' of module 'XPHY' has 62 connections declared, but only 58 given [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_START_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_START_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7023] instance 'I_XPHY' of module 'XPHY' has 62 connections declared, but only 58 given [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_START_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_START_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7023] instance 'I_XPHY' of module 'XPHY' has 62 connections declared, but only 58 given [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:87566]
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (0#1) [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:87566]
+INFO: [Synth 8-6157] synthesizing module 'IOBUFDS' [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:87583]
+INFO: [Synth 8-6155] done synthesizing module 'IOBUFDS' (0#1) [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:87583]
+INFO: [Synth 8-6157] synthesizing module 'XPIO_VREF' [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:172005]
+INFO: [Synth 8-6155] done synthesizing module 'XPIO_VREF' (0#1) [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:172005]
+INFO: [Synth 8-6155] done synthesizing module 'advanced_io_wizard_phy_v1_0_bank_wrapper' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:49]
+WARNING: [Synth 8-7071] port 'DLY_RDY' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST0' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/rtl/bd_48f7_MC0_ddrc_0_phy_wrapper.sv:3701]
+WARNING: [Synth 8-7071] port 'FIFO_WR_CLK' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST0' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/rtl/bd_48f7_MC0_ddrc_0_phy_wrapper.sv:3701]
+WARNING: [Synth 8-7071] port 'PHY_RDY' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST0' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/rtl/bd_48f7_MC0_ddrc_0_phy_wrapper.sv:3701]
+WARNING: [Synth 8-7071] port 'CNTVALUEOUT' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST0' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/rtl/bd_48f7_MC0_ddrc_0_phy_wrapper.sv:3701]
+WARNING: [Synth 8-7071] port 'EN_VTC' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST0' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/rtl/bd_48f7_MC0_ddrc_0_phy_wrapper.sv:3701]
+WARNING: [Synth 8-7071] port 'CE' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST0' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/rtl/bd_48f7_MC0_ddrc_0_phy_wrapper.sv:3701]
+WARNING: [Synth 8-7071] port 'CNTVALUEIN' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST0' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/rtl/bd_48f7_MC0_ddrc_0_phy_wrapper.sv:3701]
+WARNING: [Synth 8-7071] port 'RX_EN_VTC' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST0' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/rtl/bd_48f7_MC0_ddrc_0_phy_wrapper.sv:3701]
+WARNING: [Synth 8-7071] port 'INC' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST0' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/rtl/bd_48f7_MC0_ddrc_0_phy_wrapper.sv:3701]
+WARNING: [Synth 8-7071] port 'LD' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST0' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/rtl/bd_48f7_MC0_ddrc_0_phy_wrapper.sv:3701]
+WARNING: [Synth 8-7071] port 'RXTX_SEL' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST0' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/rtl/bd_48f7_MC0_ddrc_0_phy_wrapper.sv:3701]
+WARNING: [Synth 8-7071] port 'RX_RST' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST0' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/rtl/bd_48f7_MC0_ddrc_0_phy_wrapper.sv:3701]
+WARNING: [Synth 8-7071] port 'TX_EN_VTC' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST0' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/rtl/bd_48f7_MC0_ddrc_0_phy_wrapper.sv:3701]
+WARNING: [Synth 8-7071] port 'TX_RST' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST0' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/rtl/bd_48f7_MC0_ddrc_0_phy_wrapper.sv:3701]
+WARNING: [Synth 8-7071] port 'LPTX_I_RX_O' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST0' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/rtl/bd_48f7_MC0_ddrc_0_phy_wrapper.sv:3701]
+WARNING: [Synth 8-7071] port 'LPTX_T_RX_DISABLE' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST0' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/rtl/bd_48f7_MC0_ddrc_0_phy_wrapper.sv:3701]
+WARNING: [Synth 8-7071] port 'HSRX_DISABLE' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST0' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/rtl/bd_48f7_MC0_ddrc_0_phy_wrapper.sv:3701]
+WARNING: [Synth 8-7071] port 'VREF' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST0' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/rtl/bd_48f7_MC0_ddrc_0_phy_wrapper.sv:3701]
+WARNING: [Synth 8-7023] instance 'BANK_WRAPPER_INST0' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' has 43 connections declared, but only 25 given [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/rtl/bd_48f7_MC0_ddrc_0_phy_wrapper.sv:3701]
+INFO: [Synth 8-6157] synthesizing module 'advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized0' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:49]
+INFO: [Synth 8-6157] synthesizing module 'XPHY__parameterized1' [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:171787]
+INFO: [Synth 8-6155] done synthesizing module 'XPHY__parameterized1' (0#1) [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:171787]
+WARNING: [Synth 8-7071] port 'BISC_START_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_START_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7023] instance 'I_XPHY' of module 'XPHY' has 62 connections declared, but only 58 given [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+INFO: [Synth 8-6157] synthesizing module 'XPHY__parameterized2' [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:171787]
+INFO: [Synth 8-6155] done synthesizing module 'XPHY__parameterized2' (0#1) [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:171787]
+WARNING: [Synth 8-7071] port 'BISC_START_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_START_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7023] instance 'I_XPHY' of module 'XPHY' has 62 connections declared, but only 58 given [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+INFO: [Synth 8-6157] synthesizing module 'XPHY__parameterized3' [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:171787]
+INFO: [Synth 8-6155] done synthesizing module 'XPHY__parameterized3' (0#1) [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:171787]
+WARNING: [Synth 8-7071] port 'BISC_START_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_START_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7023] instance 'I_XPHY' of module 'XPHY' has 62 connections declared, but only 58 given [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_START_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_START_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7023] instance 'I_XPHY' of module 'XPHY' has 62 connections declared, but only 58 given [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+INFO: [Synth 8-6157] synthesizing module 'XPHY__parameterized4' [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:171787]
+INFO: [Synth 8-6155] done synthesizing module 'XPHY__parameterized4' (0#1) [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:171787]
+WARNING: [Synth 8-7071] port 'BISC_START_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_START_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7023] instance 'I_XPHY' of module 'XPHY' has 62 connections declared, but only 58 given [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+INFO: [Synth 8-6157] synthesizing module 'XPHY__parameterized5' [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:171787]
+INFO: [Synth 8-6155] done synthesizing module 'XPHY__parameterized5' (0#1) [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:171787]
+WARNING: [Synth 8-7071] port 'BISC_START_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_START_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7023] instance 'I_XPHY' of module 'XPHY' has 62 connections declared, but only 58 given [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_START_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_START_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7023] instance 'I_XPHY' of module 'XPHY' has 62 connections declared, but only 58 given [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_START_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_START_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7023] instance 'I_XPHY' of module 'XPHY' has 62 connections declared, but only 58 given [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+INFO: [Synth 8-6157] synthesizing module 'XPHY__parameterized6' [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:171787]
+INFO: [Synth 8-6155] done synthesizing module 'XPHY__parameterized6' (0#1) [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:171787]
+WARNING: [Synth 8-7071] port 'BISC_START_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_START_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7023] instance 'I_XPHY' of module 'XPHY' has 62 connections declared, but only 58 given [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+INFO: [Synth 8-6157] synthesizing module 'OBUFDS' [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:113534]
+INFO: [Synth 8-6155] done synthesizing module 'OBUFDS' (0#1) [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:113534]
+INFO: [Synth 8-6155] done synthesizing module 'advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized0' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:49]
+WARNING: [Synth 8-7071] port 'DLY_RDY' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST1' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/rtl/bd_48f7_MC0_ddrc_0_phy_wrapper.sv:3826]
+WARNING: [Synth 8-7071] port 'FIFO_WR_CLK' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST1' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/rtl/bd_48f7_MC0_ddrc_0_phy_wrapper.sv:3826]
+WARNING: [Synth 8-7071] port 'PHY_RDY' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST1' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/rtl/bd_48f7_MC0_ddrc_0_phy_wrapper.sv:3826]
+WARNING: [Synth 8-7071] port 'CNTVALUEOUT' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST1' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/rtl/bd_48f7_MC0_ddrc_0_phy_wrapper.sv:3826]
+WARNING: [Synth 8-7071] port 'EN_VTC' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST1' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/rtl/bd_48f7_MC0_ddrc_0_phy_wrapper.sv:3826]
+WARNING: [Synth 8-7071] port 'CE' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST1' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/rtl/bd_48f7_MC0_ddrc_0_phy_wrapper.sv:3826]
+WARNING: [Synth 8-7071] port 'CNTVALUEIN' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST1' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/rtl/bd_48f7_MC0_ddrc_0_phy_wrapper.sv:3826]
+WARNING: [Synth 8-7071] port 'RX_EN_VTC' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST1' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/rtl/bd_48f7_MC0_ddrc_0_phy_wrapper.sv:3826]
+WARNING: [Synth 8-7071] port 'INC' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST1' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/rtl/bd_48f7_MC0_ddrc_0_phy_wrapper.sv:3826]
+WARNING: [Synth 8-7071] port 'LD' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST1' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/rtl/bd_48f7_MC0_ddrc_0_phy_wrapper.sv:3826]
+WARNING: [Synth 8-7071] port 'RXTX_SEL' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST1' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/rtl/bd_48f7_MC0_ddrc_0_phy_wrapper.sv:3826]
+WARNING: [Synth 8-7071] port 'RX_RST' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST1' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/rtl/bd_48f7_MC0_ddrc_0_phy_wrapper.sv:3826]
+WARNING: [Synth 8-7071] port 'TX_EN_VTC' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST1' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/rtl/bd_48f7_MC0_ddrc_0_phy_wrapper.sv:3826]
+WARNING: [Synth 8-7071] port 'TX_RST' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST1' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/rtl/bd_48f7_MC0_ddrc_0_phy_wrapper.sv:3826]
+INFO: [Common 17-14] Message 'Synth 8-7071' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-7023] instance 'BANK_WRAPPER_INST1' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' has 43 connections declared, but only 25 given [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/rtl/bd_48f7_MC0_ddrc_0_phy_wrapper.sv:3826]
+INFO: [Synth 8-6157] synthesizing module 'advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:49]
+WARNING: [Synth 8-7023] instance 'I_XPHY' of module 'XPHY' has 62 connections declared, but only 58 given [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7023] instance 'I_XPHY' of module 'XPHY' has 62 connections declared, but only 58 given [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7023] instance 'I_XPHY' of module 'XPHY' has 62 connections declared, but only 58 given [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7023] instance 'I_XPHY' of module 'XPHY' has 62 connections declared, but only 58 given [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7023] instance 'I_XPHY' of module 'XPHY' has 62 connections declared, but only 58 given [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7023] instance 'I_XPHY' of module 'XPHY' has 62 connections declared, but only 58 given [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+INFO: [Synth 8-6155] done synthesizing module 'advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:49]
+WARNING: [Synth 8-7023] instance 'BANK_WRAPPER_INST2' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' has 43 connections declared, but only 25 given [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/rtl/bd_48f7_MC0_ddrc_0_phy_wrapper.sv:3951]
+INFO: [Synth 8-6157] synthesizing module 'XPLL' [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:177832]
+INFO: [Synth 8-6155] done synthesizing module 'XPLL' (0#1) [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:177832]
+WARNING: [Synth 8-7023] instance 'u_xpll0_bank0' of module 'XPLL' has 37 connections declared, but only 30 given [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/rtl/bd_48f7_MC0_ddrc_0_phy_wrapper.sv:4023]
+INFO: [Synth 8-6157] synthesizing module 'XPLL__parameterized0' [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:177832]
+INFO: [Synth 8-6155] done synthesizing module 'XPLL__parameterized0' (0#1) [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:177832]
+WARNING: [Synth 8-7023] instance 'u_xpll0_bank1' of module 'XPLL' has 37 connections declared, but only 30 given [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/rtl/bd_48f7_MC0_ddrc_0_phy_wrapper.sv:4099]
+WARNING: [Synth 8-7023] instance 'u_xpll0_bank2' of module 'XPLL' has 37 connections declared, but only 30 given [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/rtl/bd_48f7_MC0_ddrc_0_phy_wrapper.sv:4171]
+INFO: [Synth 8-6155] done synthesizing module 'bd_48f7_MC0_ddrc_0_phy_wrapper' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/rtl/bd_48f7_MC0_ddrc_0_phy_wrapper.sv:78]
+INFO: [Synth 8-6155] done synthesizing module 'bd_48f7_MC0_ddrc_0_phy' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/bfm/bd_48f7_MC0_ddrc_0_phy.sv:68]
+INFO: [Synth 8-6155] done synthesizing module 'bd_48f7_MC0_ddrc_0_wrapper' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/hdl/rtl/bd_48f7_MC0_ddrc_0_wrapper.sv:67]
+INFO: [Synth 8-6155] done synthesizing module 'bd_48f7_MC0_ddrc_0' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/hdl/rtl/bd_48f7_MC0_ddrc_0.sv:67]
+WARNING: [Synth 8-7023] instance 'MC0_ddrc' of module 'bd_48f7_MC0_ddrc_0' has 52 connections declared, but only 20 given [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/synth/bd_48f7.v:1236]
+INFO: [Synth 8-6157] synthesizing module 'bd_48f7_S00_AXI_nmu_0' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_0/hdl/bfm/bd_48f7_S00_AXI_nmu_0.sv:55]
+INFO: [Synth 8-6157] synthesizing module 'bd_48f7_S00_AXI_nmu_0_top' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_0/hdl/bfm/bd_48f7_S00_AXI_nmu_0_top.sv:88]
+INFO: [Synth 8-6157] synthesizing module 'NOC_NMU128' [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:109390]
+INFO: [Synth 8-6155] done synthesizing module 'NOC_NMU128' (0#1) [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:109390]
+WARNING: [Synth 8-7023] instance 'NOC_NMU128_INST' of module 'NOC_NMU128' has 74 connections declared, but only 72 given [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_0/hdl/bfm/bd_48f7_S00_AXI_nmu_0_top.sv:546]
+INFO: [Synth 8-6155] done synthesizing module 'bd_48f7_S00_AXI_nmu_0_top' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_0/hdl/bfm/bd_48f7_S00_AXI_nmu_0_top.sv:88]
+INFO: [Synth 8-6155] done synthesizing module 'bd_48f7_S00_AXI_nmu_0' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_0/hdl/bfm/bd_48f7_S00_AXI_nmu_0.sv:55]
+WARNING: [Synth 8-7023] instance 'S00_AXI_nmu' of module 'bd_48f7_S00_AXI_nmu_0' has 58 connections declared, but only 49 given [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/synth/bd_48f7.v:1258]
+INFO: [Synth 8-6157] synthesizing module 'bd_48f7_S01_AXI_nmu_0' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_3/hdl/bfm/bd_48f7_S01_AXI_nmu_0.sv:55]
+INFO: [Synth 8-6157] synthesizing module 'bd_48f7_S01_AXI_nmu_0_top' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_3/hdl/bfm/bd_48f7_S01_AXI_nmu_0_top.sv:88]
+INFO: [Synth 8-6157] synthesizing module 'NOC_NMU128__parameterized0' [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:109390]
+INFO: [Synth 8-6155] done synthesizing module 'NOC_NMU128__parameterized0' (0#1) [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:109390]
+WARNING: [Synth 8-7023] instance 'NOC_NMU128_INST' of module 'NOC_NMU128' has 74 connections declared, but only 72 given [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_3/hdl/bfm/bd_48f7_S01_AXI_nmu_0_top.sv:546]
+INFO: [Synth 8-6155] done synthesizing module 'bd_48f7_S01_AXI_nmu_0_top' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_3/hdl/bfm/bd_48f7_S01_AXI_nmu_0_top.sv:88]
+INFO: [Synth 8-6155] done synthesizing module 'bd_48f7_S01_AXI_nmu_0' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_3/hdl/bfm/bd_48f7_S01_AXI_nmu_0.sv:55]
+WARNING: [Synth 8-7023] instance 'S01_AXI_nmu' of module 'bd_48f7_S01_AXI_nmu_0' has 58 connections declared, but only 49 given [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/synth/bd_48f7.v:1309]
+INFO: [Synth 8-6157] synthesizing module 'bd_48f7_S02_AXI_nmu_0' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_4/hdl/bfm/bd_48f7_S02_AXI_nmu_0.sv:55]
+INFO: [Synth 8-6157] synthesizing module 'bd_48f7_S02_AXI_nmu_0_top' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_4/hdl/bfm/bd_48f7_S02_AXI_nmu_0_top.sv:88]
+INFO: [Synth 8-6157] synthesizing module 'NOC_NMU128__parameterized1' [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:109390]
+INFO: [Synth 8-6155] done synthesizing module 'NOC_NMU128__parameterized1' (0#1) [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:109390]
+WARNING: [Synth 8-7023] instance 'NOC_NMU128_INST' of module 'NOC_NMU128' has 74 connections declared, but only 72 given [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_4/hdl/bfm/bd_48f7_S02_AXI_nmu_0_top.sv:546]
+INFO: [Synth 8-6155] done synthesizing module 'bd_48f7_S02_AXI_nmu_0_top' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_4/hdl/bfm/bd_48f7_S02_AXI_nmu_0_top.sv:88]
+INFO: [Synth 8-6155] done synthesizing module 'bd_48f7_S02_AXI_nmu_0' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_4/hdl/bfm/bd_48f7_S02_AXI_nmu_0.sv:55]
+WARNING: [Synth 8-7023] instance 'S02_AXI_nmu' of module 'bd_48f7_S02_AXI_nmu_0' has 58 connections declared, but only 49 given [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/synth/bd_48f7.v:1360]
+INFO: [Synth 8-6157] synthesizing module 'bd_48f7_S03_AXI_nmu_0' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_5/hdl/bfm/bd_48f7_S03_AXI_nmu_0.sv:55]
+INFO: [Synth 8-6157] synthesizing module 'bd_48f7_S03_AXI_nmu_0_top' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_5/hdl/bfm/bd_48f7_S03_AXI_nmu_0_top.sv:88]
+INFO: [Synth 8-6157] synthesizing module 'NOC_NMU128__parameterized2' [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:109390]
+INFO: [Synth 8-6155] done synthesizing module 'NOC_NMU128__parameterized2' (0#1) [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:109390]
+WARNING: [Synth 8-7023] instance 'NOC_NMU128_INST' of module 'NOC_NMU128' has 74 connections declared, but only 72 given [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_5/hdl/bfm/bd_48f7_S03_AXI_nmu_0_top.sv:546]
+INFO: [Synth 8-6155] done synthesizing module 'bd_48f7_S03_AXI_nmu_0_top' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_5/hdl/bfm/bd_48f7_S03_AXI_nmu_0_top.sv:88]
+INFO: [Synth 8-6155] done synthesizing module 'bd_48f7_S03_AXI_nmu_0' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_5/hdl/bfm/bd_48f7_S03_AXI_nmu_0.sv:55]
+WARNING: [Synth 8-7023] instance 'S03_AXI_nmu' of module 'bd_48f7_S03_AXI_nmu_0' has 58 connections declared, but only 49 given [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/synth/bd_48f7.v:1411]
+INFO: [Synth 8-6157] synthesizing module 'bd_48f7_S04_AXI_rpu_0' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_6/hdl/bfm/bd_48f7_S04_AXI_rpu_0.sv:55]
+INFO: [Synth 8-6157] synthesizing module 'bd_48f7_S04_AXI_rpu_0_top' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_6/hdl/bfm/bd_48f7_S04_AXI_rpu_0_top.sv:88]
+INFO: [Synth 8-6157] synthesizing module 'NOC_NMU128__parameterized3' [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:109390]
+INFO: [Synth 8-6155] done synthesizing module 'NOC_NMU128__parameterized3' (0#1) [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:109390]
+WARNING: [Synth 8-7023] instance 'NOC_NMU128_INST' of module 'NOC_NMU128' has 74 connections declared, but only 72 given [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_6/hdl/bfm/bd_48f7_S04_AXI_rpu_0_top.sv:546]
+INFO: [Synth 8-6155] done synthesizing module 'bd_48f7_S04_AXI_rpu_0_top' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_6/hdl/bfm/bd_48f7_S04_AXI_rpu_0_top.sv:88]
+INFO: [Synth 8-6155] done synthesizing module 'bd_48f7_S04_AXI_rpu_0' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_6/hdl/bfm/bd_48f7_S04_AXI_rpu_0.sv:55]
+WARNING: [Synth 8-7023] instance 'S04_AXI_rpu' of module 'bd_48f7_S04_AXI_rpu_0' has 58 connections declared, but only 49 given [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/synth/bd_48f7.v:1462]
+INFO: [Synth 8-6157] synthesizing module 'bd_48f7_S05_AXI_nmu_0' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_7/hdl/bfm/bd_48f7_S05_AXI_nmu_0.sv:55]
+INFO: [Synth 8-6157] synthesizing module 'bd_48f7_S05_AXI_nmu_0_top' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_7/hdl/bfm/bd_48f7_S05_AXI_nmu_0_top.sv:88]
+INFO: [Synth 8-6157] synthesizing module 'NOC_NMU128__parameterized4' [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:109390]
+INFO: [Synth 8-6155] done synthesizing module 'NOC_NMU128__parameterized4' (0#1) [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:109390]
+WARNING: [Synth 8-7023] instance 'NOC_NMU128_INST' of module 'NOC_NMU128' has 74 connections declared, but only 72 given [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_7/hdl/bfm/bd_48f7_S05_AXI_nmu_0_top.sv:547]
+INFO: [Synth 8-6155] done synthesizing module 'bd_48f7_S05_AXI_nmu_0_top' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_7/hdl/bfm/bd_48f7_S05_AXI_nmu_0_top.sv:88]
+INFO: [Synth 8-6155] done synthesizing module 'bd_48f7_S05_AXI_nmu_0' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_7/hdl/bfm/bd_48f7_S05_AXI_nmu_0.sv:55]
+WARNING: [Synth 8-7023] instance 'S05_AXI_nmu' of module 'bd_48f7_S05_AXI_nmu_0' has 59 connections declared, but only 50 given [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/synth/bd_48f7.v:1513]
+INFO: [Synth 8-6157] synthesizing module 'bd_48f7_S06_AXI_nmu_0' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_2/hdl/bfm/bd_48f7_S06_AXI_nmu_0.sv:55]
+INFO: [Synth 8-6157] synthesizing module 'bd_48f7_S06_AXI_nmu_0_top' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_2/hdl/bfm/bd_48f7_S06_AXI_nmu_0_top.sv:88]
+INFO: [Synth 8-6157] synthesizing module 'NOC_NMU512' [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:110078]
+INFO: [Synth 8-6155] done synthesizing module 'NOC_NMU512' (0#1) [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:110078]
+WARNING: [Synth 8-689] width (64) of port connection 'IF_NOC_AXI_WDATA' does not match port width (512) of module 'NOC_NMU512' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_2/hdl/bfm/bd_48f7_S06_AXI_nmu_0_top.sv:540]
+WARNING: [Synth 8-689] width (8) of port connection 'IF_NOC_AXI_WSTRB' does not match port width (64) of module 'NOC_NMU512' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_2/hdl/bfm/bd_48f7_S06_AXI_nmu_0_top.sv:541]
+WARNING: [Synth 8-7023] instance 'NOC_NMU512_INST' of module 'NOC_NMU512' has 73 connections declared, but only 71 given [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_2/hdl/bfm/bd_48f7_S06_AXI_nmu_0_top.sv:535]
+INFO: [Synth 8-6155] done synthesizing module 'bd_48f7_S06_AXI_nmu_0_top' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_2/hdl/bfm/bd_48f7_S06_AXI_nmu_0_top.sv:88]
+INFO: [Synth 8-6155] done synthesizing module 'bd_48f7_S06_AXI_nmu_0' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_2/hdl/bfm/bd_48f7_S06_AXI_nmu_0.sv:55]
+WARNING: [Synth 8-7023] instance 'S06_AXI_nmu' of module 'bd_48f7_S06_AXI_nmu_0' has 49 connections declared, but only 40 given [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/synth/bd_48f7.v:1565]
+INFO: [Synth 8-6157] synthesizing module 'bd_48f7_S07_AXI_nmu_0' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_8/hdl/bfm/bd_48f7_S07_AXI_nmu_0.sv:55]
+INFO: [Synth 8-6157] synthesizing module 'bd_48f7_S07_AXI_nmu_0_top' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_8/hdl/bfm/bd_48f7_S07_AXI_nmu_0_top.sv:88]
+INFO: [Synth 8-6157] synthesizing module 'NOC_NMU512__parameterized0' [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:110078]
+INFO: [Synth 8-6155] done synthesizing module 'NOC_NMU512__parameterized0' (0#1) [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:110078]
+WARNING: [Synth 8-689] width (1) of port connection 'IF_NOC_AXI_AWID' does not match port width (16) of module 'NOC_NMU512__parameterized0' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_8/hdl/bfm/bd_48f7_S07_AXI_nmu_0_top.sv:544]
+WARNING: [Synth 8-689] width (64) of port connection 'IF_NOC_AXI_WDATA' does not match port width (512) of module 'NOC_NMU512__parameterized0' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_8/hdl/bfm/bd_48f7_S07_AXI_nmu_0_top.sv:545]
+WARNING: [Synth 8-689] width (8) of port connection 'IF_NOC_AXI_WSTRB' does not match port width (64) of module 'NOC_NMU512__parameterized0' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_8/hdl/bfm/bd_48f7_S07_AXI_nmu_0_top.sv:546]
+WARNING: [Synth 8-689] width (1) of port connection 'IF_NOC_AXI_BID' does not match port width (16) of module 'NOC_NMU512__parameterized0' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_8/hdl/bfm/bd_48f7_S07_AXI_nmu_0_top.sv:549]
+WARNING: [Synth 8-689] width (1) of port connection 'IF_NOC_AXI_RID' does not match port width (16) of module 'NOC_NMU512__parameterized0' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_8/hdl/bfm/bd_48f7_S07_AXI_nmu_0_top.sv:555]
+WARNING: [Synth 8-689] width (1) of port connection 'IF_NOC_AXI_ARID' does not match port width (16) of module 'NOC_NMU512__parameterized0' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_8/hdl/bfm/bd_48f7_S07_AXI_nmu_0_top.sv:566]
+WARNING: [Synth 8-7023] instance 'NOC_NMU512_INST' of module 'NOC_NMU512' has 73 connections declared, but only 71 given [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_8/hdl/bfm/bd_48f7_S07_AXI_nmu_0_top.sv:540]
+INFO: [Synth 8-6155] done synthesizing module 'bd_48f7_S07_AXI_nmu_0_top' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_8/hdl/bfm/bd_48f7_S07_AXI_nmu_0_top.sv:88]
+INFO: [Synth 8-6155] done synthesizing module 'bd_48f7_S07_AXI_nmu_0' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_8/hdl/bfm/bd_48f7_S07_AXI_nmu_0.sv:55]
+WARNING: [Synth 8-7023] instance 'S07_AXI_nmu' of module 'bd_48f7_S07_AXI_nmu_0' has 53 connections declared, but only 44 given [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/synth/bd_48f7.v:1607]
+INFO: [Synth 8-6157] synthesizing module 'bd_48f7_S08_AXI_nmu_0' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_9/hdl/bfm/bd_48f7_S08_AXI_nmu_0.sv:55]
+INFO: [Synth 8-6157] synthesizing module 'bd_48f7_S08_AXI_nmu_0_top' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_9/hdl/bfm/bd_48f7_S08_AXI_nmu_0_top.sv:88]
+INFO: [Synth 8-6157] synthesizing module 'NOC_NMU512__parameterized1' [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:110078]
+INFO: [Synth 8-6155] done synthesizing module 'NOC_NMU512__parameterized1' (0#1) [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:110078]
+WARNING: [Synth 8-689] width (64) of port connection 'IF_NOC_AXI_WDATA' does not match port width (512) of module 'NOC_NMU512__parameterized1' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_9/hdl/bfm/bd_48f7_S08_AXI_nmu_0_top.sv:540]
+WARNING: [Synth 8-689] width (8) of port connection 'IF_NOC_AXI_WSTRB' does not match port width (64) of module 'NOC_NMU512__parameterized1' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_9/hdl/bfm/bd_48f7_S08_AXI_nmu_0_top.sv:541]
+WARNING: [Synth 8-7023] instance 'NOC_NMU512_INST' of module 'NOC_NMU512' has 73 connections declared, but only 71 given [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_9/hdl/bfm/bd_48f7_S08_AXI_nmu_0_top.sv:535]
+INFO: [Synth 8-6155] done synthesizing module 'bd_48f7_S08_AXI_nmu_0_top' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_9/hdl/bfm/bd_48f7_S08_AXI_nmu_0_top.sv:88]
+INFO: [Synth 8-6155] done synthesizing module 'bd_48f7_S08_AXI_nmu_0' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_9/hdl/bfm/bd_48f7_S08_AXI_nmu_0.sv:55]
+WARNING: [Synth 8-7023] instance 'S08_AXI_nmu' of module 'bd_48f7_S08_AXI_nmu_0' has 49 connections declared, but only 40 given [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/synth/bd_48f7.v:1653]
+INFO: [Synth 8-6157] synthesizing module 'bd_48f7_const_0_0' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_1/synth/bd_48f7_const_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_10_xlconstant' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/a165/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_10_xlconstant' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/a165/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'bd_48f7_const_0_0' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_1/synth/bd_48f7_const_0_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_48f7' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/synth/bd_48f7.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'mvdrr_axi_noc_0_0' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/synth/mvdrr_axi_noc_0_0.v:53]
+WARNING: [Synth 8-3848] Net CNTVALUEOUT in module/entity advanced_io_wizard_phy_v1_0_bank_wrapper does not have driver. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:165]
+WARNING: [Synth 8-3848] Net CNTVALUEOUT in module/entity advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized0 does not have driver. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:165]
+WARNING: [Synth 8-3848] Net CNTVALUEOUT in module/entity advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 does not have driver. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:165]
+WARNING: [Synth 8-3848] Net nc_dmc_d in module/entity bd_48f7_MC0_ddrc_0_phy_wrapper does not have driver. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/rtl/bd_48f7_MC0_ddrc_0_phy_wrapper.sv:1153]
+WARNING: [Synth 8-3848] Net nc_dmc2phy_rdcs0 in module/entity bd_48f7_MC0_ddrc_0_phy_wrapper does not have driver. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/rtl/bd_48f7_MC0_ddrc_0_phy_wrapper.sv:1173]
+WARNING: [Synth 8-3848] Net nc_dmc2phy_rdcs1 in module/entity bd_48f7_MC0_ddrc_0_phy_wrapper does not have driver. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/rtl/bd_48f7_MC0_ddrc_0_phy_wrapper.sv:1176]
+WARNING: [Synth 8-3848] Net nc_dmc2phy_rden in module/entity bd_48f7_MC0_ddrc_0_phy_wrapper does not have driver. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/rtl/bd_48f7_MC0_ddrc_0_phy_wrapper.sv:1179]
+WARNING: [Synth 8-3848] Net nc_dmc2phy_wrcs0 in module/entity bd_48f7_MC0_ddrc_0_phy_wrapper does not have driver. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/rtl/bd_48f7_MC0_ddrc_0_phy_wrapper.sv:1182]
+WARNING: [Synth 8-3848] Net nc_dmc2phy_wrcs1 in module/entity bd_48f7_MC0_ddrc_0_phy_wrapper does not have driver. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/rtl/bd_48f7_MC0_ddrc_0_phy_wrapper.sv:1185]
+WARNING: [Synth 8-3848] Net nc_dmc2phy_wren in module/entity bd_48f7_MC0_ddrc_0_phy_wrapper does not have driver. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/hdl/rtl/bd_48f7_MC0_ddrc_0_phy_wrapper.sv:1188]
+INFO: [Synth 8-7129] Port FIFO_EMPTY[8] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port FIFO_EMPTY[1] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port FIFO_EMPTY[0] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port FIFO_WR_CLK[8] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port FIFO_WR_CLK[1] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port FIFO_WR_CLK[0] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port GT_STATUS[8] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port GT_STATUS[1] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port GT_STATUS[0] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[431] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[430] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[429] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[428] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[427] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[426] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[425] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[424] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[423] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[422] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[421] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[420] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[419] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[418] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[417] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[416] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[415] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[414] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[413] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[412] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[411] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[410] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[409] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[408] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[407] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[406] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[405] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[404] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[403] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[402] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[401] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[400] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[399] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[398] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[397] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[396] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[395] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[394] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[393] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[392] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[391] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[390] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[389] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[388] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[387] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[386] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[385] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[384] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[95] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[94] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[93] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[92] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[91] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[90] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[89] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[88] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[87] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[86] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[85] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[84] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[83] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[82] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[81] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[80] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[79] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[78] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[77] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[76] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[75] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[74] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[73] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[72] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[71] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[70] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[69] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[68] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[67] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[66] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[65] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[64] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[63] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[62] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[61] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[60] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[59] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[58] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[57] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[56] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[55] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[54] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q[53] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 2107.359 ; gain = 504.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 2107.359 ; gain = 504.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 2107.359 ; gain = 504.070
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.252 . Memory (MB): peak = 2107.359 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Constraints 18-6358] GCLK_DESKEW_DEFAULT not specified in Clock Expansion Window constraints config file for device xcvc1902.  GCLK Deskew mode will be Off and cannot be enabled via GCLK_DESKEW override.
+INFO: [Constraints 18-5720] The default GCLK Deskew mode is Off.
+INFO: [Device 21-9335] Optimized delay calculation is enabled for this device.
+INFO: [Constraints 18-13227] Created floorplan with Advanced Flow Feature Set
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/mvdrr_axi_noc_0_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/mvdrr_axi_noc_0_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_0/xdc/bd_48f7_S00_AXI_nmu_0.xdc] for cell 'inst/S00_AXI_nmu/bd_48f7_S00_AXI_nmu_0_top_INST'
+Finished Parsing XDC File [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_0/xdc/bd_48f7_S00_AXI_nmu_0.xdc] for cell 'inst/S00_AXI_nmu/bd_48f7_S00_AXI_nmu_0_top_INST'
+Parsing XDC File [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_2/xdc/bd_48f7_S06_AXI_nmu_0.xdc] for cell 'inst/S06_AXI_nmu/bd_48f7_S06_AXI_nmu_0_top_INST'
+Finished Parsing XDC File [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_2/xdc/bd_48f7_S06_AXI_nmu_0.xdc] for cell 'inst/S06_AXI_nmu/bd_48f7_S06_AXI_nmu_0_top_INST'
+Parsing XDC File [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_3/xdc/bd_48f7_S01_AXI_nmu_0.xdc] for cell 'inst/S01_AXI_nmu/bd_48f7_S01_AXI_nmu_0_top_INST'
+Finished Parsing XDC File [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_3/xdc/bd_48f7_S01_AXI_nmu_0.xdc] for cell 'inst/S01_AXI_nmu/bd_48f7_S01_AXI_nmu_0_top_INST'
+Parsing XDC File [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_4/xdc/bd_48f7_S02_AXI_nmu_0.xdc] for cell 'inst/S02_AXI_nmu/bd_48f7_S02_AXI_nmu_0_top_INST'
+Finished Parsing XDC File [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_4/xdc/bd_48f7_S02_AXI_nmu_0.xdc] for cell 'inst/S02_AXI_nmu/bd_48f7_S02_AXI_nmu_0_top_INST'
+Parsing XDC File [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_5/xdc/bd_48f7_S03_AXI_nmu_0.xdc] for cell 'inst/S03_AXI_nmu/bd_48f7_S03_AXI_nmu_0_top_INST'
+Finished Parsing XDC File [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_5/xdc/bd_48f7_S03_AXI_nmu_0.xdc] for cell 'inst/S03_AXI_nmu/bd_48f7_S03_AXI_nmu_0_top_INST'
+Parsing XDC File [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_6/xdc/bd_48f7_S04_AXI_rpu_0.xdc] for cell 'inst/S04_AXI_rpu/bd_48f7_S04_AXI_rpu_0_top_INST'
+Finished Parsing XDC File [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_6/xdc/bd_48f7_S04_AXI_rpu_0.xdc] for cell 'inst/S04_AXI_rpu/bd_48f7_S04_AXI_rpu_0_top_INST'
+Parsing XDC File [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_7/xdc/bd_48f7_S05_AXI_nmu_0.xdc] for cell 'inst/S05_AXI_nmu/bd_48f7_S05_AXI_nmu_0_top_INST'
+Finished Parsing XDC File [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_7/xdc/bd_48f7_S05_AXI_nmu_0.xdc] for cell 'inst/S05_AXI_nmu/bd_48f7_S05_AXI_nmu_0_top_INST'
+Parsing XDC File [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_8/xdc/bd_48f7_S07_AXI_nmu_0.xdc] for cell 'inst/S07_AXI_nmu/bd_48f7_S07_AXI_nmu_0_top_INST'
+Finished Parsing XDC File [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_8/xdc/bd_48f7_S07_AXI_nmu_0.xdc] for cell 'inst/S07_AXI_nmu/bd_48f7_S07_AXI_nmu_0_top_INST'
+Parsing XDC File [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_9/xdc/bd_48f7_S08_AXI_nmu_0.xdc] for cell 'inst/S08_AXI_nmu/bd_48f7_S08_AXI_nmu_0_top_INST'
+Finished Parsing XDC File [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_9/xdc/bd_48f7_S08_AXI_nmu_0.xdc] for cell 'inst/S08_AXI_nmu/bd_48f7_S08_AXI_nmu_0_top_INST'
+Parsing XDC File [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/hdl/par/bd_48f7_MC0_ddrc_0_ip.xdc] for cell 'inst/MC0_ddrc/inst'
+create_clock: Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 2345.191 ; gain = 99.520
+Finished Parsing XDC File [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/hdl/par/bd_48f7_MC0_ddrc_0_ip.xdc] for cell 'inst/MC0_ddrc/inst'
+Parsing XDC File [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/mvdrr_axi_noc_0_0_board.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/mvdrr_axi_noc_0_0_board.xdc] for cell 'inst'
+Parsing XDC File [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/mvdrr_axi_noc_0_0.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/mvdrr_axi_noc_0_0.xdc] for cell 'inst'
+Parsing XDC File [C:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.runs/mvdrr_axi_noc_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.runs/mvdrr_axi_noc_0_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.runs/mvdrr_axi_noc_0_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mvdrr_axi_noc_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/mvdrr_axi_noc_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2349.227 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.671 . Memory (MB): peak = 2349.227 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:07 ; elapsed = 00:01:22 . Memory (MB): peak = 2349.227 ; gain = 745.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcvc1902-vsva2197-2MP-e-S
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:07 ; elapsed = 00:01:22 . Memory (MB): peak = 2349.227 ; gain = 745.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:09 ; elapsed = 00:01:25 . Memory (MB): peak = 2349.227 ; gain = 745.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:10 ; elapsed = 00:01:26 . Memory (MB): peak = 2349.227 ; gain = 745.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1968 (col length:164)
+BRAMs: 1934 (col length: RAMB18 168 RAMB36 84)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:14 ; elapsed = 00:01:31 . Memory (MB): peak = 2349.227 ; gain = 745.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:24 ; elapsed = 00:03:02 . Memory (MB): peak = 3228.492 ; gain = 1625.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:24 ; elapsed = 00:03:02 . Memory (MB): peak = 3251.605 ; gain = 1648.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `bd_48f7_MC0_ddrc_0_phy`
+   Worst Slack before retiming is invalid and worst slack after retiming is invalid
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_MC0_ddrc_0_phy' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `bd_48f7_MC0_ddrc_0_wrapper`
+   Worst Slack before retiming is invalid and worst slack after retiming is invalid
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_MC0_ddrc_0_wrapper' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `bd_48f7_MC0_ddrc_0`
+   Worst Slack before retiming is invalid and worst slack after retiming is invalid
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_MC0_ddrc_0' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S00_AXI_nmu_0_top`
+   Worst Slack before retiming is invalid and worst slack after retiming is invalid
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S00_AXI_nmu_0_top' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S00_AXI_nmu_0`
+   Worst Slack before retiming is invalid and worst slack after retiming is invalid
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S00_AXI_nmu_0' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S01_AXI_nmu_0_top`
+   Worst Slack before retiming is invalid and worst slack after retiming is invalid
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S01_AXI_nmu_0_top' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S01_AXI_nmu_0`
+   Worst Slack before retiming is invalid and worst slack after retiming is invalid
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S01_AXI_nmu_0' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S02_AXI_nmu_0_top`
+   Worst Slack before retiming is invalid and worst slack after retiming is invalid
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S02_AXI_nmu_0_top' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S02_AXI_nmu_0`
+   Worst Slack before retiming is invalid and worst slack after retiming is invalid
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S02_AXI_nmu_0' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S03_AXI_nmu_0_top`
+   Worst Slack before retiming is invalid and worst slack after retiming is invalid
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S03_AXI_nmu_0_top' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S03_AXI_nmu_0`
+   Worst Slack before retiming is invalid and worst slack after retiming is invalid
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S03_AXI_nmu_0' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S04_AXI_rpu_0_top`
+   Worst Slack before retiming is invalid and worst slack after retiming is invalid
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S04_AXI_rpu_0_top' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S04_AXI_rpu_0`
+   Worst Slack before retiming is invalid and worst slack after retiming is invalid
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S04_AXI_rpu_0' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S05_AXI_nmu_0_top`
+   Worst Slack before retiming is invalid and worst slack after retiming is invalid
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S05_AXI_nmu_0_top' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S05_AXI_nmu_0`
+   Worst Slack before retiming is invalid and worst slack after retiming is invalid
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S05_AXI_nmu_0' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S06_AXI_nmu_0_top`
+   Worst Slack before retiming is invalid and worst slack after retiming is invalid
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S06_AXI_nmu_0_top' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S06_AXI_nmu_0`
+   Worst Slack before retiming is invalid and worst slack after retiming is invalid
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S06_AXI_nmu_0' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S07_AXI_nmu_0_top`
+   Worst Slack before retiming is invalid and worst slack after retiming is invalid
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S07_AXI_nmu_0_top' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S07_AXI_nmu_0`
+   Worst Slack before retiming is invalid and worst slack after retiming is invalid
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S07_AXI_nmu_0' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S08_AXI_nmu_0_top`
+   Worst Slack before retiming is invalid and worst slack after retiming is invalid
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S08_AXI_nmu_0_top' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S08_AXI_nmu_0`
+   Worst Slack before retiming is invalid and worst slack after retiming is invalid
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S08_AXI_nmu_0' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `bd_48f7_const_0_0`
+   Worst Slack before retiming is invalid and worst slack after retiming is invalid
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_const_0_0' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `bd_48f7`
+   Worst Slack before retiming is invalid and worst slack after retiming is invalid
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `mvdrr_axi_noc_0_0`
+   Worst Slack before retiming is invalid and worst slack after retiming is invalid
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `mvdrr_axi_noc_0_0' done
+
+
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:26 ; elapsed = 00:03:05 . Memory (MB): peak = 3257.586 ; gain = 1654.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5816] Retiming module `bd_48f7_MC0_ddrc_0_phy`
+   Worst Slack before retiming is invalid and worst slack after retiming is invalid
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_MC0_ddrc_0_phy' done
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_MC0_ddrc_0_wrapper`
+   Worst Slack before retiming is invalid and worst slack after retiming is invalid
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_MC0_ddrc_0_wrapper' done
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_MC0_ddrc_0`
+   Worst Slack before retiming is invalid and worst slack after retiming is invalid
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_MC0_ddrc_0' done
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S00_AXI_nmu_0_top`
+   Worst Slack before retiming is invalid and worst slack after retiming is invalid
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S00_AXI_nmu_0_top' done
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S00_AXI_nmu_0`
+   Worst Slack before retiming is invalid and worst slack after retiming is invalid
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S00_AXI_nmu_0' done
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S01_AXI_nmu_0_top`
+   Worst Slack before retiming is invalid and worst slack after retiming is invalid
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S01_AXI_nmu_0_top' done
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S01_AXI_nmu_0`
+   Worst Slack before retiming is invalid and worst slack after retiming is invalid
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S01_AXI_nmu_0' done
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S02_AXI_nmu_0_top`
+   Worst Slack before retiming is invalid and worst slack after retiming is invalid
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S02_AXI_nmu_0_top' done
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S02_AXI_nmu_0`
+   Worst Slack before retiming is invalid and worst slack after retiming is invalid
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S02_AXI_nmu_0' done
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S03_AXI_nmu_0_top`
+   Worst Slack before retiming is invalid and worst slack after retiming is invalid
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S03_AXI_nmu_0_top' done
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S03_AXI_nmu_0`
+   Worst Slack before retiming is invalid and worst slack after retiming is invalid
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S03_AXI_nmu_0' done
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S04_AXI_rpu_0_top`
+   Worst Slack before retiming is invalid and worst slack after retiming is invalid
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S04_AXI_rpu_0_top' done
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S04_AXI_rpu_0`
+   Worst Slack before retiming is invalid and worst slack after retiming is invalid
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S04_AXI_rpu_0' done
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S05_AXI_nmu_0_top`
+   Worst Slack before retiming is invalid and worst slack after retiming is invalid
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S05_AXI_nmu_0_top' done
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S05_AXI_nmu_0`
+   Worst Slack before retiming is invalid and worst slack after retiming is invalid
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S05_AXI_nmu_0' done
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S06_AXI_nmu_0_top`
+   Worst Slack before retiming is invalid and worst slack after retiming is invalid
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S06_AXI_nmu_0_top' done
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S06_AXI_nmu_0`
+   Worst Slack before retiming is invalid and worst slack after retiming is invalid
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S06_AXI_nmu_0' done
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S07_AXI_nmu_0_top`
+   Worst Slack before retiming is invalid and worst slack after retiming is invalid
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S07_AXI_nmu_0_top' done
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S07_AXI_nmu_0`
+   Worst Slack before retiming is invalid and worst slack after retiming is invalid
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S07_AXI_nmu_0' done
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S08_AXI_nmu_0_top`
+   Worst Slack before retiming is invalid and worst slack after retiming is invalid
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S08_AXI_nmu_0_top' done
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S08_AXI_nmu_0`
+   Worst Slack before retiming is invalid and worst slack after retiming is invalid
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_S08_AXI_nmu_0' done
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_const_0_0`
+   Worst Slack before retiming is invalid and worst slack after retiming is invalid
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7_const_0_0' done
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7`
+   Worst Slack before retiming is invalid and worst slack after retiming is invalid
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_48f7' done
+
+
+INFO: [Synth 8-5816] Retiming module `mvdrr_axi_noc_0_0`
+   Worst Slack before retiming is invalid and worst slack after retiming is invalid
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `mvdrr_axi_noc_0_0' done
+
+
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:35 ; elapsed = 00:03:26 . Memory (MB): peak = 3500.801 ; gain = 1897.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:35 ; elapsed = 00:03:26 . Memory (MB): peak = 3500.801 ; gain = 1897.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:36 ; elapsed = 00:03:26 . Memory (MB): peak = 3500.801 ; gain = 1897.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:36 ; elapsed = 00:03:26 . Memory (MB): peak = 3500.801 ; gain = 1897.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:36 ; elapsed = 00:03:27 . Memory (MB): peak = 3500.801 ; gain = 1897.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:36 ; elapsed = 00:03:27 . Memory (MB): peak = 3500.801 ; gain = 1897.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |DDRMC      |     1|
+|2     |DDRMC_RIU  |     1|
+|3     |NOC_NMU128 |     6|
+|4     |NOC_NMU512 |     3|
+|5     |XPHY       |    23|
+|13    |XPIO_VREF  |    16|
+|14    |XPLL       |     3|
+|16    |IBUFDS     |     1|
+|17    |IOBUF      |    72|
+|18    |IOBUFDS    |     8|
+|19    |OBUF       |    26|
+|20    |OBUFDS     |     1|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:36 ; elapsed = 00:03:27 . Memory (MB): peak = 3500.801 ; gain = 1897.512
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:41 ; elapsed = 00:02:48 . Memory (MB): peak = 3500.801 ; gain = 1655.645
+Synthesis Optimization Complete : Time (s): cpu = 00:02:37 ; elapsed = 00:03:33 . Memory (MB): peak = 3500.801 ; gain = 1897.512
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.266 . Memory (MB): peak = 3500.801 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Constraints 18-6358] GCLK_DESKEW_DEFAULT not specified in Clock Expansion Window constraints config file for device xcvc1902.  GCLK Deskew mode will be Off and cannot be enabled via GCLK_DESKEW override.
+INFO: [Constraints 18-5720] The default GCLK Deskew mode is Off.
+INFO: [Device 21-9335] Optimized delay calculation is enabled for this device.
+INFO: [Constraints 18-13227] Created floorplan with Advanced Flow Feature Set
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-549] Could not create 'VOH' constraint because cell 'inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IO_VREF[0].I_VREF' is not directly connected to top level port. 'VOH' is ignored by Vivado but preserved inside the database.
+Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
+WARNING: [Constraints 18-549] Could not create 'VOH' constraint because cell 'inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IO_VREF[1].I_VREF' is not directly connected to top level port. 'VOH' is ignored by Vivado but preserved inside the database.
+Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
+WARNING: [Constraints 18-549] Could not create 'VOH' constraint because cell 'inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IO_VREF[2].I_VREF' is not directly connected to top level port. 'VOH' is ignored by Vivado but preserved inside the database.
+Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
+WARNING: [Constraints 18-549] Could not create 'VOH' constraint because cell 'inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IO_VREF[3].I_VREF' is not directly connected to top level port. 'VOH' is ignored by Vivado but preserved inside the database.
+Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
+WARNING: [Constraints 18-549] Could not create 'VOH' constraint because cell 'inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IO_VREF[4].I_VREF' is not directly connected to top level port. 'VOH' is ignored by Vivado but preserved inside the database.
+Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
+WARNING: [Constraints 18-549] Could not create 'VOH' constraint because cell 'inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IO_VREF[5].I_VREF' is not directly connected to top level port. 'VOH' is ignored by Vivado but preserved inside the database.
+Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
+WARNING: [Constraints 18-549] Could not create 'VOH' constraint because cell 'inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IO_VREF[6].I_VREF' is not directly connected to top level port. 'VOH' is ignored by Vivado but preserved inside the database.
+Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
+WARNING: [Constraints 18-549] Could not create 'VOH' constraint because cell 'inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IO_VREF[7].I_VREF' is not directly connected to top level port. 'VOH' is ignored by Vivado but preserved inside the database.
+Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
+WARNING: [Constraints 18-549] Could not create 'VOH' constraint because cell 'inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IO_VREF[6].I_VREF' is not directly connected to top level port. 'VOH' is ignored by Vivado but preserved inside the database.
+Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
+WARNING: [Constraints 18-549] Could not create 'VOH' constraint because cell 'inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IO_VREF[7].I_VREF' is not directly connected to top level port. 'VOH' is ignored by Vivado but preserved inside the database.
+Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
+WARNING: [Constraints 18-549] Could not create 'VOH' constraint because cell 'inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IO_VREF[2].I_VREF' is not directly connected to top level port. 'VOH' is ignored by Vivado but preserved inside the database.
+Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
+WARNING: [Constraints 18-549] Could not create 'VOH' constraint because cell 'inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IO_VREF[3].I_VREF' is not directly connected to top level port. 'VOH' is ignored by Vivado but preserved inside the database.
+Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
+WARNING: [Constraints 18-549] Could not create 'VOH' constraint because cell 'inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IO_VREF[4].I_VREF' is not directly connected to top level port. 'VOH' is ignored by Vivado but preserved inside the database.
+Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
+WARNING: [Constraints 18-549] Could not create 'VOH' constraint because cell 'inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IO_VREF[5].I_VREF' is not directly connected to top level port. 'VOH' is ignored by Vivado but preserved inside the database.
+Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
+WARNING: [Constraints 18-549] Could not create 'VOH' constraint because cell 'inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IO_VREF[6].I_VREF' is not directly connected to top level port. 'VOH' is ignored by Vivado but preserved inside the database.
+Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
+WARNING: [Constraints 18-549] Could not create 'VOH' constraint because cell 'inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IO_VREF[7].I_VREF' is not directly connected to top level port. 'VOH' is ignored by Vivado but preserved inside the database.
+Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
+INFO: [Constraints 18-5243] Reading ELF File 'c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_axi_noc_0_0/bd_0/ip/ip_10/ip_0/bd_48f7_MC0_ddrc_0_phy_ddrmc.elf' for cell 'inst/MC0_ddrc/inst/noc_ddr4_phy/inst/u_ddrmc_main'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3500.801 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 8568b702
+INFO: [Common 17-83] Releasing license: Synthesis
+371 Infos, 184 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:03:19 ; elapsed = 00:04:26 . Memory (MB): peak = 3500.801 ; gain = 2835.820
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 3500.801 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.runs/mvdrr_axi_noc_0_0_synth_1/mvdrr_axi_noc_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP mvdrr_axi_noc_0_0, cache-ID = 4dfa5f9729ff6069
+INFO: [Coretcl 2-1174] Renamed 27 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 3500.801 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.runs/mvdrr_axi_noc_0_0_synth_1/mvdrr_axi_noc_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file mvdrr_axi_noc_0_0_utilization_synth.rpt -pb mvdrr_axi_noc_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Jun 27 23:17:41 2026...

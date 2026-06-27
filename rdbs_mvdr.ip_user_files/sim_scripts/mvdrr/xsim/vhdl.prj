@@ -1,0 +1,20 @@
+vhdl xil_defaultlib  \
+"../../../bd/mvdrr/ip/mvdrr_proc_sys_reset_0_0/sim/mvdrr_proc_sys_reset_0_0.vhd" \
+"../../../bd/mvdrr/ip/mvdrr_axi_dma_0_0/sim/mvdrr_axi_dma_0_0.vhd" \
+"../../../bd/mvdrr/ip/mvdrr_smartconnect_0_0/bd_0/ip/ip_1/sim/bd_0f28_psr_aclk_0.vhd" \
+"../../../bd/mvdrr/ip/mvdrr_smartconnect_1_0/bd_0/ip/ip_1/sim/bd_cf79_psr_aclk_0.vhd" \
+"../../../bd/mvdrr/ip/mvdrr_rdbs_kernel_0_0/hdl/ip/rdbs_kernel_fpext_32ns_64_1_no_dsp_1_ip/sim/rdbs_kernel_fpext_32ns_64_1_no_dsp_1_ip.vhd" \
+"../../../bd/mvdrr/ip/mvdrr_mvdr_weights_0_0/hdl/ip/mvdr_weights_dcmp_64ns_64ns_1_1_no_dsp_1_ip/sim/mvdr_weights_dcmp_64ns_64ns_1_1_no_dsp_1_ip.vhd" \
+"../../../bd/mvdrr/ip/mvdrr_mvdr_weights_0_0/hdl/ip/mvdr_weights_facc_32ns_32ns_1ns_32_2_primitive_dsp_1_ip/sim/mvdr_weights_facc_32ns_32ns_1ns_32_2_primitive_dsp_1_ip.vhd" \
+"../../../bd/mvdrr/ip/mvdrr_mvdr_weights_0_0/hdl/ip/mvdr_weights_fcmp_32ns_32ns_1_1_no_dsp_1_ip/sim/mvdr_weights_fcmp_32ns_32ns_1_1_no_dsp_1_ip.vhd" \
+"../../../bd/mvdrr/ip/mvdrr_mvdr_weights_0_0/hdl/ip/mvdr_weights_fdiv_32ns_32ns_32_11_no_dsp_1_ip/sim/mvdr_weights_fdiv_32ns_32ns_32_11_no_dsp_1_ip.vhd" \
+"../../../bd/mvdrr/ip/mvdrr_mvdr_weights_0_0/hdl/ip/mvdr_weights_fmadd_32ns_32ns_32ns_32ns_32_2_primitive_dsp_1_ip/sim/mvdr_weights_fmadd_32ns_32ns_32ns_32ns_32_2_primitive_dsp_1_ip.vhd" \
+"../../../bd/mvdrr/ip/mvdrr_mvdr_weights_0_0/hdl/ip/mvdr_weights_fmsub_32ns_32ns_32ns_32ns_32_2_primitive_dsp_1_ip/sim/mvdr_weights_fmsub_32ns_32ns_32ns_32ns_32_2_primitive_dsp_1_ip.vhd" \
+"../../../bd/mvdrr/ip/mvdrr_mvdr_weights_0_0/hdl/ip/mvdr_weights_fmul_32ns_32ns_32_1_primitive_dsp_1_ip/sim/mvdr_weights_fmul_32ns_32ns_32_1_primitive_dsp_1_ip.vhd" \
+"../../../bd/mvdrr/ip/mvdrr_mvdr_weights_0_0/hdl/ip/mvdr_weights_fpext_32ns_64_1_no_dsp_1_ip/sim/mvdr_weights_fpext_32ns_64_1_no_dsp_1_ip.vhd" \
+"../../../bd/mvdrr/ip/mvdrr_mvdr_weights_0_0/hdl/ip/mvdr_weights_fptrunc_64ns_32_1_no_dsp_1_ip/sim/mvdr_weights_fptrunc_64ns_32_1_no_dsp_1_ip.vhd" \
+"../../../bd/mvdrr/ip/mvdrr_mvdr_weights_0_0/hdl/ip/mvdr_weights_fsqrt_32ns_32ns_32_15_no_dsp_1_ip/sim/mvdr_weights_fsqrt_32ns_32ns_32_15_no_dsp_1_ip.vhd" \
+"../../../bd/mvdrr/ip/mvdrr_mvdr_weights_0_0/hdl/ip/mvdr_weights_fsub_32ns_32ns_32_1_primitive_dsp_1_ip/sim/mvdr_weights_fsub_32ns_32ns_32_1_primitive_dsp_1_ip.vhd" \
+
+# Do not sort compile order
+nosort

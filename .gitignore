@@ -1,0 +1,10 @@
+mvdr.runs/
+mvdr.cache/
+mvdr.ip_user_files/
+mvdr.sim/
+mvdr.gen/
+*.log
+*.jou
+*.str
+*.zip
+*.jar

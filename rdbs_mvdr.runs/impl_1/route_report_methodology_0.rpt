@@ -1,0 +1,64 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Sat Jun 27 23:47:59 2026
+| Host         : Deepraj running 64-bit major release  (build 9200)
+| Command      : report_methodology -file route_report_methodology_0.rpt -pb route_report_methodology_0.pb -rpx route_report_methodology_0.rpx
+| Design       : mvdrr_wrapper
+| Device       : xcvc1902-vsva2197-2MP-e-S
+| Speed File   : -2MP
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max checks: <unlimited>
+             Checks found: 5
++----------+------------------+----------------------------------------------------+--------+
+| Rule     | Severity         | Description                                        | Checks |
++----------+------------------+----------------------------------------------------+--------+
+| TIMING-2 | Critical Warning | Invalid primary clock source pin                   | 1      |
+| TIMING-4 | Critical Warning | Invalid primary clock redefinition on a clock tree | 1      |
+| AVAL-344 | Warning          | Design_needs_USER_RAM_AVERAGE_ACTIVITY_set         | 1      |
+| CLKC-72  | Advisory         | Substitute PLL for MMCME5 check                    | 1      |
+| CLKC-75  | Advisory         | MMCME5 with global clock driver has no LOC         | 1      |
++----------+------------------+----------------------------------------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-2#1 Critical Warning
+Invalid primary clock source pin  
+A primary clock mvdrr_i/clk_wizard_0/inst/clk_in1 is created on an inappropriate pin mvdrr_i/clk_wizard_0/inst/clk_in1. It is recommended to create a primary clock only on a proper clock source (input port or primitive output pin with no timing arc)
+Related violations: <none>
+
+TIMING-4#1 Critical Warning
+Invalid primary clock redefinition on a clock tree  
+Invalid clock redefinition on a clock tree. The primary clock mvdrr_i/clk_wizard_0/inst/clk_in1 is defined downstream of clock clk_pl_0 and overrides its insertion delay and/or waveform definition
+Related violations: <none>
+
+AVAL-344#1 Warning
+Design_needs_USER_RAM_AVERAGE_ACTIVITY_set  
+The design property USER_RAM_AVERAGE_ACTIVITY on the top-level current_design object is unset (or set to -1).  The estimated RAM_AVERAGE_ACTIVITY used for the design is 2 and assumes a worst-case switching scenario for the URAM and BRAM.  RAM activity directly impacts clock uncertainty and the RAM_AVERAGE_ACTIVITY property may not be accurate for designs that are not final.  It is recommended that the USER_RAM_AVERAGE_ACTIVITY property be specified.  Please refer to the Versal ACAP Clocking Resources Architecture Manual and the Versal ACAP Hardware, IP, and Platform Development Methodology User Guide for more information on specifying the USER_RAM_AVERAGE_ACTIVITY.
+Related violations: <none>
+
+CLKC-72#1 Advisory
+Substitute PLL for MMCME5 check  
+The MMCME5 cell mvdrr_i/clk_wizard_0/inst/clock_primitive_inst/MMCME5_inst has a single input clock whose source driver, UNKNOWN, is not optimally located and the MMCM has a configuration which could be accommodated by a PLL.  Consider changing the MMCM to a PLL which could align better with the input clock driver.
+Related violations: <none>
+
+CLKC-75#1 Advisory
+MMCME5 with global clock driver has no LOC  
+The MMCME5 cell mvdrr_i/clk_wizard_0/inst/clock_primitive_inst/MMCME5_inst CLKIN1 or CLKIN2 pin is driven by global Clock buffer(s) mvdrr_i/versal_cips_0/inst/pspmc_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG and does not have a LOC constraint. It is recommended to LOC the MMCM and use the CLOCK_DEDICATED_ROUTE constraint on the net(s) driven by the global Clock buffer(s).
+Related violations: <none>
+
+

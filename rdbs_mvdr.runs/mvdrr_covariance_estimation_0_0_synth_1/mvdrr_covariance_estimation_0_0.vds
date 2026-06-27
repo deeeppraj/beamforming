@@ -1,0 +1,1373 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Sat Jun 27 23:12:26 2026
+# Process ID         : 18196
+# Current directory  : C:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.runs/mvdrr_covariance_estimation_0_0_synth_1
+# Command line       : vivado.exe -log mvdrr_covariance_estimation_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mvdrr_covariance_estimation_0_0.tcl
+# Log file           : C:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.runs/mvdrr_covariance_estimation_0_0_synth_1/mvdrr_covariance_estimation_0_0.vds
+# Journal file       : C:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.runs/mvdrr_covariance_estimation_0_0_synth_1\vivado.jou
+# Running On         : Deepraj
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i5-11320H @ 3.20GHz
+# CPU Frequency      : 3187 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 16952 MB
+# Swap memory        : 5272 MB
+# Total Virtual      : 22224 MB
+# Available Virtual  : 3507 MB
+#-----------------------------------------------------------
+source mvdrr_covariance_estimation_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 572.473 ; gain = 259.086
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Deepraj/Desktop/WORK/istrac/ip/covariance_kernel'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Deepraj/Desktop/WORK/istrac/ip/mvdr_kernel'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Deepraj/Desktop/WORK/istrac/ip/rdbs_kernel'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AMDDesignTools/2025.2/Vivado/data/ip'.
+Command: synth_design -top mvdrr_covariance_estimation_0_0 -part xcvc1902-vsva2197-2MP-e-S -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcvc1902'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcvc1902'
+INFO: [Device 21-403] Loading part xcvc1902-vsva2197-2MP-e-S
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 24160
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 1913.031 ; gain = 331.746
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'mvdrr_covariance_estimation_0_0' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_covariance_estimation_0_0/synth/mvdrr_covariance_estimation_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'covariance_estimation' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation.v:9]
+INFO: [Synth 8-6157] synthesizing module 'covariance_estimation_X_buf_re_RAM_AUTO_1R1W' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_X_buf_re_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'covariance_estimation_X_buf_re_RAM_AUTO_1R1W' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_X_buf_re_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'covariance_estimation_R_buf_re_RAM_AUTO_1R1W' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_R_buf_re_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'covariance_estimation_R_buf_re_RAM_AUTO_1R1W' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_R_buf_re_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'covariance_estimation_covariance_estimation_Pipeline_LOAD_SNAPSHOT_LOAD_CHANNEL' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_covariance_estimation_Pipeline_LOAD_SNAPSHOT_LOAD_CHANNEL.v:9]
+INFO: [Synth 8-6157] synthesizing module 'covariance_estimation_flow_control_loop_pipe_sequential_init' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'covariance_estimation_flow_control_loop_pipe_sequential_init' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'covariance_estimation_covariance_estimation_Pipeline_LOAD_SNAPSHOT_LOAD_CHANNEL' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_covariance_estimation_Pipeline_LOAD_SNAPSHOT_LOAD_CHANNEL.v:9]
+INFO: [Synth 8-6157] synthesizing module 'covariance_estimation_covariance_estimation_Pipeline_WRITE_ROW_WRITE_COL' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_covariance_estimation_Pipeline_WRITE_ROW_WRITE_COL.v:9]
+INFO: [Synth 8-6157] synthesizing module 'covariance_estimation_mul_5ns_9ns_13_1_1' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_mul_5ns_9ns_13_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'covariance_estimation_mul_5ns_9ns_13_1_1' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_mul_5ns_9ns_13_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'covariance_estimation_sparsemux_43_5_32_1_1' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_sparsemux_43_5_32_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'covariance_estimation_sparsemux_43_5_32_1_1' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_sparsemux_43_5_32_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'covariance_estimation_covariance_estimation_Pipeline_WRITE_ROW_WRITE_COL' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_covariance_estimation_Pipeline_WRITE_ROW_WRITE_COL.v:9]
+INFO: [Synth 8-6157] synthesizing module 'covariance_estimation_covariance_estimation_Pipeline_INNER_K' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_covariance_estimation_Pipeline_INNER_K.v:9]
+INFO: [Synth 8-6157] synthesizing module 'covariance_estimation_sparsemux_43_5_16_1_1' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_sparsemux_43_5_16_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'covariance_estimation_sparsemux_43_5_16_1_1' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_sparsemux_43_5_16_1_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'covariance_estimation_mul_16s_16s_32_1_1' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_mul_16s_16s_32_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'covariance_estimation_mul_16s_16s_32_1_1' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_mul_16s_16s_32_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'covariance_estimation_mac_muladd_16s_16s_32s_33_4_1' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_mac_muladd_16s_16s_32s_33_4_1.v:45]
+INFO: [Synth 8-6157] synthesizing module 'covariance_estimation_mac_muladd_16s_16s_32s_33_4_1_DSP48_0' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_mac_muladd_16s_16s_32s_33_4_1.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'covariance_estimation_mac_muladd_16s_16s_32s_33_4_1_DSP48_0' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_mac_muladd_16s_16s_32s_33_4_1.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'covariance_estimation_mac_muladd_16s_16s_32s_33_4_1' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_mac_muladd_16s_16s_32s_33_4_1.v:45]
+INFO: [Synth 8-6157] synthesizing module 'covariance_estimation_mac_mulsub_16s_16s_32s_32_4_1' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_mac_mulsub_16s_16s_32s_32_4_1.v:45]
+INFO: [Synth 8-6157] synthesizing module 'covariance_estimation_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_mac_mulsub_16s_16s_32s_32_4_1.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'covariance_estimation_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_mac_mulsub_16s_16s_32s_32_4_1.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'covariance_estimation_mac_mulsub_16s_16s_32s_32_4_1' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_mac_mulsub_16s_16s_32s_32_4_1.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'covariance_estimation_covariance_estimation_Pipeline_INNER_K' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_covariance_estimation_Pipeline_INNER_K.v:9]
+INFO: [Synth 8-6157] synthesizing module 'covariance_estimation_ctrl_s_axi' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_ctrl_s_axi.v:9]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_ctrl_s_axi.v:207]
+INFO: [Synth 8-6155] done synthesizing module 'covariance_estimation_ctrl_s_axi' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_ctrl_s_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'covariance_estimation_gmem_m_axi' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_gmem_m_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'covariance_estimation_gmem_m_axi_store' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_gmem_m_axi.v:318]
+INFO: [Synth 8-6157] synthesizing module 'covariance_estimation_gmem_m_axi_fifo' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_gmem_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'covariance_estimation_gmem_m_axi_srl' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_gmem_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'covariance_estimation_gmem_m_axi_srl' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_gmem_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'covariance_estimation_gmem_m_axi_fifo' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_gmem_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'covariance_estimation_gmem_m_axi_fifo__parameterized0' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_gmem_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'covariance_estimation_gmem_m_axi_srl__parameterized0' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_gmem_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'covariance_estimation_gmem_m_axi_srl__parameterized0' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_gmem_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'covariance_estimation_gmem_m_axi_fifo__parameterized0' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_gmem_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'covariance_estimation_gmem_m_axi_fifo__parameterized1' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_gmem_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'covariance_estimation_gmem_m_axi_mem' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_gmem_m_axi.v:3034]
+INFO: [Synth 8-6155] done synthesizing module 'covariance_estimation_gmem_m_axi_mem' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_gmem_m_axi.v:3034]
+INFO: [Synth 8-6155] done synthesizing module 'covariance_estimation_gmem_m_axi_fifo__parameterized1' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_gmem_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'covariance_estimation_gmem_m_axi_fifo__parameterized2' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_gmem_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'covariance_estimation_gmem_m_axi_srl__parameterized1' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_gmem_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'covariance_estimation_gmem_m_axi_srl__parameterized1' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_gmem_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'covariance_estimation_gmem_m_axi_fifo__parameterized2' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_gmem_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'covariance_estimation_gmem_m_axi_fifo__parameterized3' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_gmem_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'covariance_estimation_gmem_m_axi_srl__parameterized2' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_gmem_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'covariance_estimation_gmem_m_axi_srl__parameterized2' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_gmem_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'covariance_estimation_gmem_m_axi_fifo__parameterized3' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_gmem_m_axi.v:2781]
+INFO: [Synth 8-6155] done synthesizing module 'covariance_estimation_gmem_m_axi_store' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_gmem_m_axi.v:318]
+INFO: [Synth 8-6157] synthesizing module 'covariance_estimation_gmem_m_axi_write' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_gmem_m_axi.v:1112]
+INFO: [Synth 8-6157] synthesizing module 'covariance_estimation_gmem_m_axi_burst_converter' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_gmem_m_axi.v:1407]
+INFO: [Synth 8-6157] synthesizing module 'covariance_estimation_gmem_m_axi_burst_sequential' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_gmem_m_axi.v:2013]
+INFO: [Synth 8-6157] synthesizing module 'covariance_estimation_gmem_m_axi_reg_slice' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_gmem_m_axi.v:2677]
+INFO: [Synth 8-6155] done synthesizing module 'covariance_estimation_gmem_m_axi_reg_slice' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_gmem_m_axi.v:2677]
+INFO: [Synth 8-6155] done synthesizing module 'covariance_estimation_gmem_m_axi_burst_sequential' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_gmem_m_axi.v:2013]
+INFO: [Synth 8-6155] done synthesizing module 'covariance_estimation_gmem_m_axi_burst_converter' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_gmem_m_axi.v:1407]
+INFO: [Synth 8-6157] synthesizing module 'covariance_estimation_gmem_m_axi_throttle' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_gmem_m_axi.v:2408]
+INFO: [Synth 8-6157] synthesizing module 'covariance_estimation_gmem_m_axi_fifo__parameterized4' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_gmem_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'covariance_estimation_gmem_m_axi_srl__parameterized3' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_gmem_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'covariance_estimation_gmem_m_axi_srl__parameterized3' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_gmem_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'covariance_estimation_gmem_m_axi_fifo__parameterized4' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_gmem_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'covariance_estimation_gmem_m_axi_reg_slice__parameterized0' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_gmem_m_axi.v:2677]
+INFO: [Synth 8-6155] done synthesizing module 'covariance_estimation_gmem_m_axi_reg_slice__parameterized0' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_gmem_m_axi.v:2677]
+INFO: [Synth 8-6157] synthesizing module 'covariance_estimation_gmem_m_axi_reg_slice__parameterized1' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_gmem_m_axi.v:2677]
+INFO: [Synth 8-6155] done synthesizing module 'covariance_estimation_gmem_m_axi_reg_slice__parameterized1' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_gmem_m_axi.v:2677]
+INFO: [Synth 8-6155] done synthesizing module 'covariance_estimation_gmem_m_axi_throttle' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_gmem_m_axi.v:2408]
+INFO: [Synth 8-6157] synthesizing module 'covariance_estimation_gmem_m_axi_reg_slice__parameterized2' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_gmem_m_axi.v:2677]
+INFO: [Synth 8-6155] done synthesizing module 'covariance_estimation_gmem_m_axi_reg_slice__parameterized2' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_gmem_m_axi.v:2677]
+INFO: [Synth 8-6155] done synthesizing module 'covariance_estimation_gmem_m_axi_write' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_gmem_m_axi.v:1112]
+INFO: [Synth 8-6155] done synthesizing module 'covariance_estimation_gmem_m_axi' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_gmem_m_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'covariance_estimation_regslice_both' [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'covariance_estimation_regslice_both' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'covariance_estimation' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'mvdrr_covariance_estimation_0_0' (0#1) [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_covariance_estimation_0_0/synth/mvdrr_covariance_estimation_0_0.v:53]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_ctrl_s_axi.v:271]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-7129] Port in_BURST_AWLEN[7] in module covariance_estimation_gmem_m_axi_throttle is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_BURST_AWLEN[6] in module covariance_estimation_gmem_m_axi_throttle is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_BURST_AWLEN[5] in module covariance_estimation_gmem_m_axi_throttle is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_BURST_AWLEN[4] in module covariance_estimation_gmem_m_axi_throttle is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_BURST_AWLEN[3] in module covariance_estimation_gmem_m_axi_throttle is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_BURST_AWLEN[2] in module covariance_estimation_gmem_m_axi_throttle is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_BURST_AWLEN[1] in module covariance_estimation_gmem_m_axi_throttle is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_BURST_AWLEN[0] in module covariance_estimation_gmem_m_axi_throttle is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_BUS_BID[0] in module covariance_estimation_gmem_m_axi_write is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_BUS_BRESP[1] in module covariance_estimation_gmem_m_axi_write is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_BUS_BRESP[0] in module covariance_estimation_gmem_m_axi_write is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_BUS_BUSER[0] in module covariance_estimation_gmem_m_axi_write is either unconnected or has no load
+INFO: [Synth 8-7129] Port ARREADY in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RID[0] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[63] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[62] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[61] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[60] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[59] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[58] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[57] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[56] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[55] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[54] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[53] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[52] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[51] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[50] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[49] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[48] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[47] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[46] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[45] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[44] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[43] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[42] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[41] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[40] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[39] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[38] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[37] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[36] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[35] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[34] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[33] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[32] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[31] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[30] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[29] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[28] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[27] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[26] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[25] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[24] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[23] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[22] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[21] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[20] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[19] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[18] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[17] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[16] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[15] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[14] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[13] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[12] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[11] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[10] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[9] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[8] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[7] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[6] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[5] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[4] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[3] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[2] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[1] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[0] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RRESP[1] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RRESP[0] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RLAST in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RUSER[0] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RVALID in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port I_CH0_ARADDR[63] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port I_CH0_ARADDR[62] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port I_CH0_ARADDR[61] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port I_CH0_ARADDR[60] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port I_CH0_ARADDR[59] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port I_CH0_ARADDR[58] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port I_CH0_ARADDR[57] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port I_CH0_ARADDR[56] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port I_CH0_ARADDR[55] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port I_CH0_ARADDR[54] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port I_CH0_ARADDR[53] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port I_CH0_ARADDR[52] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port I_CH0_ARADDR[51] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port I_CH0_ARADDR[50] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port I_CH0_ARADDR[49] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port I_CH0_ARADDR[48] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port I_CH0_ARADDR[47] in module covariance_estimation_gmem_m_axi is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:25 . Memory (MB): peak = 2104.582 ; gain = 523.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:25 . Memory (MB): peak = 2104.582 ; gain = 523.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:25 . Memory (MB): peak = 2104.582 ; gain = 523.297
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.434 . Memory (MB): peak = 2104.582 ; gain = 0.000
+INFO: [Constraints 18-6358] GCLK_DESKEW_DEFAULT not specified in Clock Expansion Window constraints config file for device xcvc1902.  GCLK Deskew mode will be Off and cannot be enabled via GCLK_DESKEW override.
+INFO: [Constraints 18-5720] The default GCLK Deskew mode is Off.
+INFO: [Device 21-9335] Optimized delay calculation is enabled for this device.
+INFO: [Constraints 18-13227] Created floorplan with Advanced Flow Feature Set
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_covariance_estimation_0_0/constraints/covariance_estimation_ooc.xdc] for cell 'inst'
+create_clock: Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 2378.812 ; gain = 105.195
+Finished Parsing XDC File [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ip/mvdrr_covariance_estimation_0_0/constraints/covariance_estimation_ooc.xdc] for cell 'inst'
+Parsing XDC File [C:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.runs/mvdrr_covariance_estimation_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.runs/mvdrr_covariance_estimation_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 2378.812 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.640 . Memory (MB): peak = 2378.812 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:01 ; elapsed = 00:01:18 . Memory (MB): peak = 2378.812 ; gain = 797.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcvc1902-vsva2197-2MP-e-S
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:01 ; elapsed = 00:01:18 . Memory (MB): peak = 2378.812 ; gain = 797.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:01 ; elapsed = 00:01:18 . Memory (MB): peak = 2378.812 ; gain = 797.527
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'covariance_estimation_ctrl_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'covariance_estimation_ctrl_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'covariance_estimation_gmem_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'covariance_estimation_gmem_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'covariance_estimation_gmem_m_axi_reg_slice__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'covariance_estimation_gmem_m_axi_reg_slice__parameterized2'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'covariance_estimation_regslice_both'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-6904] The RAM "covariance_estimation_R_buf_re_RAM_AUTO_1R1W:/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'covariance_estimation_ctrl_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'covariance_estimation_ctrl_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'covariance_estimation_gmem_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'covariance_estimation_gmem_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'covariance_estimation_gmem_m_axi_reg_slice__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'covariance_estimation_gmem_m_axi_reg_slice__parameterized2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+*
+                    ZERO |                               01 |                               10
+                     ONE |                               11 |                               11
+                     TWO |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'covariance_estimation_regslice_both'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:05 ; elapsed = 00:01:23 . Memory (MB): peak = 2378.812 ; gain = 797.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   6 Input   69 Bit       Adders := 2     
+	   4 Input   69 Bit       Adders := 2     
+	   3 Input   64 Bit       Adders := 1     
+	   2 Input   49 Bit       Adders := 2     
+	   2 Input   32 Bit       Adders := 5     
+	   2 Input   20 Bit       Adders := 1     
+	   2 Input   15 Bit       Adders := 1     
+	   2 Input   12 Bit       Adders := 1     
+	   3 Input   11 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 7     
+	   3 Input   10 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 3     
+	   2 Input    8 Bit       Adders := 9     
+	   2 Input    7 Bit       Adders := 4     
+	   2 Input    5 Bit       Adders := 19    
+	   2 Input    4 Bit       Adders := 8     
+	   2 Input    1 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 18    
+	   3 Input      1 Bit         XORs := 2     
++---Registers : 
+	              114 Bit    Registers := 1     
+	               97 Bit    Registers := 2     
+	               96 Bit    Registers := 1     
+	               73 Bit    Registers := 2     
+	               72 Bit    Registers := 1     
+	               64 Bit    Registers := 8     
+	               63 Bit    Registers := 2     
+	               62 Bit    Registers := 1     
+	               56 Bit    Registers := 1     
+	               52 Bit    Registers := 1     
+	               48 Bit    Registers := 2     
+	               32 Bit    Registers := 98    
+	               24 Bit    Registers := 2     
+	               20 Bit    Registers := 2     
+	               16 Bit    Registers := 45    
+	               15 Bit    Registers := 1     
+	               13 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	               10 Bit    Registers := 5     
+	                9 Bit    Registers := 9     
+	                8 Bit    Registers := 10    
+	                7 Bit    Registers := 4     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 19    
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 9     
+	                1 Bit    Registers := 296   
++---RAMs : 
+	              35K Bit	(511 X 72 bit)          RAMs := 1     
+	              15K Bit	(1000 X 16 bit)          RAMs := 42    
+	              672 Bit	(21 X 32 bit)          RAMs := 42    
++---Muxes : 
+	   2 Input   97 Bit        Muxes := 1     
+	   2 Input   73 Bit        Muxes := 1     
+	   2 Input   64 Bit        Muxes := 7     
+	   2 Input   48 Bit        Muxes := 2     
+	   3 Input   48 Bit        Muxes := 2     
+	   2 Input   32 Bit        Muxes := 45    
+	   3 Input   32 Bit        Muxes := 2     
+	   2 Input   20 Bit        Muxes := 2     
+	   4 Input   12 Bit        Muxes := 2     
+	   2 Input   12 Bit        Muxes := 3     
+	   2 Input   10 Bit        Muxes := 44    
+	   4 Input   10 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 4     
+	   2 Input    8 Bit        Muxes := 9     
+	   2 Input    7 Bit        Muxes := 3     
+	   2 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 96    
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 8     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 4     
+	   4 Input    2 Bit        Muxes := 9     
+	   3 Input    2 Bit        Muxes := 13    
+	   2 Input    2 Bit        Muxes := 54    
+	   2 Input    1 Bit        Muxes := 193   
+	   4 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1968 (col length:164)
+BRAMs: 1934 (col length: RAMB18 168 RAMB36 84)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP tmp_product, operation Mode is: A*B.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: Generating DSP tmp_product, operation Mode is: A*B.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: Generating DSP tmp_product, operation Mode is: A*B.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+WARNING: [Synth 8-3936] Found unconnected internal register 'covariance_estimation_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '52' to '33' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_mac_muladd_16s_16s_32s_33_4_1.v:37]
+WARNING: [Synth 8-3936] Found unconnected internal register 'covariance_estimation_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '51' to '33' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_mac_muladd_16s_16s_32s_33_4_1.v:31]
+DSP Report: Generating DSP covariance_estimation_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg, operation Mode is: (C+(A2*B2)')'.
+DSP Report: register covariance_estimation_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/b_reg_reg is absorbed into DSP covariance_estimation_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register covariance_estimation_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/a_reg_reg is absorbed into DSP covariance_estimation_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register covariance_estimation_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP covariance_estimation_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register covariance_estimation_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/m_reg_reg is absorbed into DSP covariance_estimation_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator covariance_estimation_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p is absorbed into DSP covariance_estimation_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator covariance_estimation_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/m is absorbed into DSP covariance_estimation_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg.
+WARNING: [Synth 8-3936] Found unconnected internal register 'covariance_estimation_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '52' to '32' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_mac_mulsub_16s_16s_32s_32_4_1.v:37]
+WARNING: [Synth 8-3936] Found unconnected internal register 'covariance_estimation_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '51' to '32' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_mac_mulsub_16s_16s_32s_32_4_1.v:31]
+DSP Report: Generating DSP covariance_estimation_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg, operation Mode is: (C-(A2*B2)')'.
+DSP Report: register covariance_estimation_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/b_reg_reg is absorbed into DSP covariance_estimation_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register covariance_estimation_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/a_reg_reg is absorbed into DSP covariance_estimation_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register covariance_estimation_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP covariance_estimation_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register covariance_estimation_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg is absorbed into DSP covariance_estimation_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator covariance_estimation_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p is absorbed into DSP covariance_estimation_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator covariance_estimation_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/m is absorbed into DSP covariance_estimation_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg.
+INFO: [Synth 8-3936] Found unconnected internal register 'wreq_throttle/rs_req/data_p1_reg' and it is trimmed from '73' to '72' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_gmem_m_axi.v:2710]
+INFO: [Synth 8-3936] Found unconnected internal register 'wreq_throttle/rs_req/data_p2_reg' and it is trimmed from '73' to '72' bits. [c:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.gen/sources_1/bd/mvdrr/ipshared/b31c/hdl/verilog/covariance_estimation_gmem_m_axi.v:2731]
+INFO: [Synth 8-6904] The RAM "inst/R_buf_re_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_re_1_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_re_2_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_re_3_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_re_4_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_re_5_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_re_6_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_re_7_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_re_8_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_re_9_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_re_10_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_re_11_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_re_12_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_re_13_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_re_14_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_re_15_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_re_16_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_re_17_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_re_18_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_re_19_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_re_20_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_im_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_im_1_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_im_2_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_im_3_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_im_4_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_im_5_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_im_6_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_im_7_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_im_8_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_im_9_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_im_10_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_im_11_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_im_12_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_im_13_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_im_14_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_im_15_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_im_16_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_im_17_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_im_18_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_im_19_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_im_20_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+RAM ("inst/X_buf_re_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_re_1_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_re_2_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_re_3_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_re_4_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_re_5_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_re_6_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_re_7_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_re_8_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_re_9_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_re_10_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_re_11_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_re_12_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_re_13_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_re_14_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_re_15_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_re_16_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_re_17_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_re_18_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_re_19_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_re_20_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_im_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_im_1_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_im_2_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_im_3_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_im_4_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_im_5_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_im_6_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_im_7_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_im_8_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_im_9_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_im_10_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_im_11_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_im_12_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_im_13_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_im_14_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_im_15_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_im_16_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_im_17_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_im_18_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_im_19_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_im_20_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_re_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_re_1_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_re_2_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_re_3_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_re_4_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_re_5_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_re_6_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_re_7_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_re_8_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_re_9_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_re_10_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_re_11_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_re_12_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_re_13_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_re_14_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_re_15_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_re_16_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_re_17_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_re_18_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_re_19_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_re_20_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_im_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_im_1_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_im_2_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_im_3_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_im_4_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_im_5_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_im_6_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_im_7_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_im_8_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_im_9_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_im_10_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_im_11_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_im_12_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_im_13_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_im_14_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_im_15_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_im_16_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_im_17_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_im_18_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_im_19_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/R_buf_im_20_U/ram_reg" of size (depth=21 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-3332] Sequential element (FSM_onehot_wstate_reg[0]) is unused and will be removed from module covariance_estimation_ctrl_s_axi.
+INFO: [Synth 8-3332] Sequential element (FSM_onehot_rstate_reg[0]) is unused and will be removed from module covariance_estimation_ctrl_s_axi.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:40 ; elapsed = 00:02:05 . Memory (MB): peak = 2670.805 ; gain = 1089.520
+---------------------------------------------------------------------------------
+ Sort Area is  covariance_estimation_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg_7 : 0 0 : 2185 2185 : Used 1 time 0
+ Sort Area is  covariance_estimation_mac_muladd_16s_16s_32s_33_4_1_DSP48_0_U/p_reg_reg_5 : 0 0 : 2065 2065 : Used 1 time 0
+ Sort Area is  tmp_product_2 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_4 : 0 0 : 1635 1635 : Used 1 time 0
+ Sort Area is  tmp_product_0 : 0 0 : 339 339 : Used 1 time 0
+RAM ("inst/X_buf_re_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_re_1_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_re_2_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_re_3_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_re_4_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_re_5_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_re_6_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_re_7_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_re_8_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_re_9_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_re_10_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_re_11_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_re_12_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_re_13_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_re_14_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_re_15_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_re_16_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_re_17_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_re_18_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_re_19_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_re_20_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_im_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_im_1_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_im_2_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_im_3_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_im_4_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_im_5_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_im_6_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_im_7_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_im_8_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_im_9_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_im_10_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_im_11_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_im_12_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_im_13_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_im_14_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_im_15_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_im_16_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_im_17_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_im_18_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_im_19_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/X_buf_im_20_U/ram_reg") is too shallow (depth = 1000) to use URAM. Choosing BRAM instead of URAM 
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------------+--------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name       | RTL Object                                 | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++------------------+--------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|inst              | X_buf_re_U/ram_reg                         | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_re_1_U/ram_reg                       | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_re_2_U/ram_reg                       | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_re_3_U/ram_reg                       | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_re_4_U/ram_reg                       | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_re_5_U/ram_reg                       | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_re_6_U/ram_reg                       | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_re_7_U/ram_reg                       | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_re_8_U/ram_reg                       | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_re_9_U/ram_reg                       | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_re_10_U/ram_reg                      | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_re_11_U/ram_reg                      | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_re_12_U/ram_reg                      | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_re_13_U/ram_reg                      | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_re_14_U/ram_reg                      | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_re_15_U/ram_reg                      | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_re_16_U/ram_reg                      | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_re_17_U/ram_reg                      | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_re_18_U/ram_reg                      | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_re_19_U/ram_reg                      | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_re_20_U/ram_reg                      | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_im_U/ram_reg                         | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_im_1_U/ram_reg                       | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_im_2_U/ram_reg                       | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_im_3_U/ram_reg                       | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_im_4_U/ram_reg                       | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_im_5_U/ram_reg                       | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_im_6_U/ram_reg                       | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_im_7_U/ram_reg                       | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_im_8_U/ram_reg                       | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_im_9_U/ram_reg                       | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_im_10_U/ram_reg                      | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_im_11_U/ram_reg                      | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_im_12_U/ram_reg                      | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_im_13_U/ram_reg                      | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_im_14_U/ram_reg                      | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_im_15_U/ram_reg                      | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_im_16_U/ram_reg                      | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_im_17_U/ram_reg                      | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_im_18_U/ram_reg                      | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_im_19_U/ram_reg                      | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_im_20_U/ram_reg                      | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst/gmem_m_axi_U | store_unit_0/buff_wdata/U_fifo_mem/mem_reg | 511 x 72(WRITE_FIRST)  |   | R | 511 x 72(READ_FIRST)   | W |   | Port A and B     | 0      | 1      | 1               | 
++------------------+--------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+-----------------------+-----------+----------------------+----------------+
+|Module Name | RTL Object            | Inference | Size (Depth x Width) | Primitives     | 
++------------+-----------------------+-----------+----------------------+----------------+
+|inst        | R_buf_re_U/ram_reg    | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_re_1_U/ram_reg  | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_re_2_U/ram_reg  | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_re_3_U/ram_reg  | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_re_4_U/ram_reg  | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_re_5_U/ram_reg  | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_re_6_U/ram_reg  | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_re_7_U/ram_reg  | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_re_8_U/ram_reg  | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_re_9_U/ram_reg  | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_re_10_U/ram_reg | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_re_11_U/ram_reg | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_re_12_U/ram_reg | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_re_13_U/ram_reg | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_re_14_U/ram_reg | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_re_15_U/ram_reg | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_re_16_U/ram_reg | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_re_17_U/ram_reg | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_re_18_U/ram_reg | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_re_19_U/ram_reg | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_re_20_U/ram_reg | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_im_U/ram_reg    | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_im_1_U/ram_reg  | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_im_2_U/ram_reg  | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_im_3_U/ram_reg  | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_im_4_U/ram_reg  | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_im_5_U/ram_reg  | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_im_6_U/ram_reg  | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_im_7_U/ram_reg  | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_im_8_U/ram_reg  | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_im_9_U/ram_reg  | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_im_10_U/ram_reg | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_im_11_U/ram_reg | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_im_12_U/ram_reg | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_im_13_U/ram_reg | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_im_14_U/ram_reg | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_im_15_U/ram_reg | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_im_16_U/ram_reg | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_im_17_U/ram_reg | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_im_18_U/ram_reg | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_im_19_U/ram_reg | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_im_20_U/ram_reg | Implied   | 32 x 32              | RAM32X1S x 32  | 
++------------+-----------------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------------------------------------------------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                                                 | DSP Mapping   | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------------------------------------------------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|covariance_estimation_mul_5ns_9ns_13_1_1                    | A*B           | 10     | 6      | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|covariance_estimation_mul_16s_16s_32_1_1                    | A*B           | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|covariance_estimation_mul_16s_16s_32_1_1                    | A*B           | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|covariance_estimation_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A2*B2)')' | 17     | 17     | 32     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|covariance_estimation_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-(A2*B2)')' | 17     | 17     | 32     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
++------------------------------------------------------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:53 ; elapsed = 00:03:39 . Memory (MB): peak = 3238.066 ; gain = 1656.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:03:00 ; elapsed = 00:03:48 . Memory (MB): peak = 3289.164 ; gain = 1707.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------------+--------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name       | RTL Object                                 | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++------------------+--------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|inst              | X_buf_re_U/ram_reg                         | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_re_1_U/ram_reg                       | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_re_2_U/ram_reg                       | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_re_3_U/ram_reg                       | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_re_4_U/ram_reg                       | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_re_5_U/ram_reg                       | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_re_6_U/ram_reg                       | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_re_7_U/ram_reg                       | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_re_8_U/ram_reg                       | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_re_9_U/ram_reg                       | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_re_10_U/ram_reg                      | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_re_11_U/ram_reg                      | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_re_12_U/ram_reg                      | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_re_13_U/ram_reg                      | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_re_14_U/ram_reg                      | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_re_15_U/ram_reg                      | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_re_16_U/ram_reg                      | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_re_17_U/ram_reg                      | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_re_18_U/ram_reg                      | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_re_19_U/ram_reg                      | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_re_20_U/ram_reg                      | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_im_U/ram_reg                         | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_im_1_U/ram_reg                       | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_im_2_U/ram_reg                       | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_im_3_U/ram_reg                       | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_im_4_U/ram_reg                       | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_im_5_U/ram_reg                       | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_im_6_U/ram_reg                       | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_im_7_U/ram_reg                       | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_im_8_U/ram_reg                       | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_im_9_U/ram_reg                       | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_im_10_U/ram_reg                      | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_im_11_U/ram_reg                      | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_im_12_U/ram_reg                      | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_im_13_U/ram_reg                      | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_im_14_U/ram_reg                      | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_im_15_U/ram_reg                      | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_im_16_U/ram_reg                      | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_im_17_U/ram_reg                      | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_im_18_U/ram_reg                      | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_im_19_U/ram_reg                      | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst              | X_buf_im_20_U/ram_reg                      | 1000 x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|inst/gmem_m_axi_U | store_unit_0/buff_wdata/U_fifo_mem/mem_reg | 511 x 72(WRITE_FIRST)  |   | R | 511 x 72(READ_FIRST)   | W |   | Port A and B     | 0      | 1      | 1               | 
++------------------+--------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+
+Distributed RAM: Final Mapping Report
++------------+-----------------------+-----------+----------------------+----------------+
+|Module Name | RTL Object            | Inference | Size (Depth x Width) | Primitives     | 
++------------+-----------------------+-----------+----------------------+----------------+
+|inst        | R_buf_re_U/ram_reg    | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_re_1_U/ram_reg  | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_re_2_U/ram_reg  | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_re_3_U/ram_reg  | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_re_4_U/ram_reg  | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_re_5_U/ram_reg  | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_re_6_U/ram_reg  | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_re_7_U/ram_reg  | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_re_8_U/ram_reg  | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_re_9_U/ram_reg  | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_re_10_U/ram_reg | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_re_11_U/ram_reg | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_re_12_U/ram_reg | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_re_13_U/ram_reg | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_re_14_U/ram_reg | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_re_15_U/ram_reg | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_re_16_U/ram_reg | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_re_17_U/ram_reg | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_re_18_U/ram_reg | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_re_19_U/ram_reg | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_re_20_U/ram_reg | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_im_U/ram_reg    | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_im_1_U/ram_reg  | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_im_2_U/ram_reg  | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_im_3_U/ram_reg  | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_im_4_U/ram_reg  | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_im_5_U/ram_reg  | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_im_6_U/ram_reg  | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_im_7_U/ram_reg  | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_im_8_U/ram_reg  | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_im_9_U/ram_reg  | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_im_10_U/ram_reg | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_im_11_U/ram_reg | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_im_12_U/ram_reg | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_im_13_U/ram_reg | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_im_14_U/ram_reg | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_im_15_U/ram_reg | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_im_16_U/ram_reg | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_im_17_U/ram_reg | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_im_18_U/ram_reg | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_im_19_U/ram_reg | Implied   | 32 x 32              | RAM32X1S x 32  | 
+|inst        | R_buf_im_20_U/ram_reg | Implied   | 32 x 32              | RAM32X1S x 32  | 
++------------+-----------------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `covariance_estimation_mul_5ns_9ns_13_1_1`
+   Worst Slack before retiming is 0.864 ns and worst slack after retiming is 0.864 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `covariance_estimation_mul_5ns_9ns_13_1_1' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `covariance_estimation_mul_16s_16s_32_1_1__1`
+   Worst Slack before retiming is 0.864 ns and worst slack after retiming is 0.864 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `covariance_estimation_mul_16s_16s_32_1_1__1' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `covariance_estimation_mul_16s_16s_32_1_1`
+   Worst Slack before retiming is 0.864 ns and worst slack after retiming is 0.864 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `covariance_estimation_mul_16s_16s_32_1_1' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `covariance_estimation_mac_muladd_16s_16s_32s_33_4_1`
+   Worst Slack before retiming is 0.864 ns and worst slack after retiming is 0.864 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `covariance_estimation_mac_muladd_16s_16s_32s_33_4_1' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `covariance_estimation_mac_mulsub_16s_16s_32s_32_4_1`
+   Worst Slack before retiming is 0.864 ns and worst slack after retiming is 0.864 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `covariance_estimation_mac_mulsub_16s_16s_32s_32_4_1' done
+
+
+INFO: [Synth 8-5816] Retiming module `covariance_estimation`
+   Worst Slack before retiming is 0.864 ns and worst slack after retiming is 0.883 ns
+   Numbers of local forward move = 53, and local backward move = 23
+
+	Retimed registers names:
+		inst/add_ln90_2_reg_2973_reg[26]_fret
+		inst/add_ln90_2_reg_2973_reg[28]_fret
+		inst/add_ln90_2_reg_2973_reg[30]_fret
+		inst/add_ln90_2_reg_2973_reg[32]_fret
+		inst/add_ln90_2_reg_2973_reg[34]_fret
+		inst/add_ln90_2_reg_2973_reg[36]_fret
+		inst/add_ln90_2_reg_2973_reg[38]_fret
+		inst/add_ln90_2_reg_2973_reg[40]_fret
+		inst/add_ln90_2_reg_2973_reg[42]_fret
+		inst/add_ln90_2_reg_2973_reg[44]_fret
+		inst/add_ln90_2_reg_2973_reg[48]_fret
+		inst/add_ln90_2_reg_2973_reg[50]_fret
+		inst/add_ln90_2_reg_2973_reg[7]_fret
+		inst/add_ln91_2_reg_2978_reg[26]_fret
+		inst/add_ln91_2_reg_2978_reg[28]_fret
+		inst/add_ln91_2_reg_2978_reg[30]_fret
+		inst/add_ln91_2_reg_2978_reg[32]_fret
+		inst/add_ln91_2_reg_2978_reg[34]_fret
+		inst/add_ln91_2_reg_2978_reg[36]_fret
+		inst/add_ln91_2_reg_2978_reg[38]_fret
+		inst/add_ln91_2_reg_2978_reg[40]_fret
+		inst/add_ln91_2_reg_2978_reg[42]_fret
+		inst/add_ln91_2_reg_2978_reg[44]_fret
+		inst/add_ln91_2_reg_2978_reg[48]_fret
+		inst/add_ln91_2_reg_2978_reg[50]_fret
+		inst/add_ln91_2_reg_2978_reg[7]_fret
+		inst/ap_CS_fsm_reg[11]_fret
+		inst/grp_covariance_estimation_Pipeline_INNER_K_fu_1389/acc_im_fu_192_reg[11]_fret
+		inst/grp_covariance_estimation_Pipeline_INNER_K_fu_1389/acc_im_fu_192_reg[11]_fret__0
+		inst/grp_covariance_estimation_Pipeline_INNER_K_fu_1389/acc_im_fu_192_reg[13]_fret
+		inst/grp_covariance_estimation_Pipeline_INNER_K_fu_1389/acc_im_fu_192_reg[13]_fret__0
+		inst/grp_covariance_estimation_Pipeline_INNER_K_fu_1389/acc_im_fu_192_reg[15]_fret
+		inst/grp_covariance_estimation_Pipeline_INNER_K_fu_1389/acc_im_fu_192_reg[15]_fret__0
+		inst/grp_covariance_estimation_Pipeline_INNER_K_fu_1389/acc_im_fu_192_reg[17]_fret
+		inst/grp_covariance_estimation_Pipeline_INNER_K_fu_1389/acc_im_fu_192_reg[17]_fret__0
+		inst/grp_covariance_estimation_Pipeline_INNER_K_fu_1389/acc_im_fu_192_reg[19]_fret
+		inst/grp_covariance_estimation_Pipeline_INNER_K_fu_1389/acc_im_fu_192_reg[19]_fret__0
+		inst/grp_covariance_estimation_Pipeline_INNER_K_fu_1389/acc_im_fu_192_reg[1]_fret
+		inst/grp_covariance_estimation_Pipeline_INNER_K_fu_1389/acc_im_fu_192_reg[21]_fret
+		inst/grp_covariance_estimation_Pipeline_INNER_K_fu_1389/acc_im_fu_192_reg[21]_fret__0
+		inst/grp_covariance_estimation_Pipeline_INNER_K_fu_1389/acc_im_fu_192_reg[23]_fret
+		inst/grp_covariance_estimation_Pipeline_INNER_K_fu_1389/acc_im_fu_192_reg[23]_fret__0
+		inst/grp_covariance_estimation_Pipeline_INNER_K_fu_1389/acc_im_fu_192_reg[45]_fret
+		inst/grp_covariance_estimation_Pipeline_INNER_K_fu_1389/acc_im_fu_192_reg[45]_fret__0
+		inst/grp_covariance_estimation_Pipeline_INNER_K_fu_1389/acc_im_fu_192_reg[45]_fret__1
+		inst/grp_covariance_estimation_Pipeline_INNER_K_fu_1389/acc_im_fu_192_reg[45]_fret__2
+		inst/grp_covariance_estimation_Pipeline_INNER_K_fu_1389/acc_im_fu_192_reg[5]_fret
+		inst/grp_covariance_estimation_Pipeline_INNER_K_fu_1389/acc_im_fu_192_reg[5]_fret__0
+		inst/grp_covariance_estimation_Pipeline_INNER_K_fu_1389/acc_im_fu_192_reg[7]_fret
+		inst/grp_covariance_estimation_Pipeline_INNER_K_fu_1389/acc_im_fu_192_reg[7]_fret__0
+		inst/grp_covariance_estimation_Pipeline_INNER_K_fu_1389/acc_im_fu_192_reg[9]_fret
+		inst/grp_covariance_estimation_Pipeline_INNER_K_fu_1389/acc_im_fu_192_reg[9]_fret__0
+		inst/grp_covariance_estimation_Pipeline_INNER_K_fu_1389/acc_re_fu_188_reg[11]_fret
+		inst/grp_covariance_estimation_Pipeline_INNER_K_fu_1389/acc_re_fu_188_reg[11]_fret__0
+		inst/grp_covariance_estimation_Pipeline_INNER_K_fu_1389/acc_re_fu_188_reg[13]_fret
+		inst/grp_covariance_estimation_Pipeline_INNER_K_fu_1389/acc_re_fu_188_reg[13]_fret__0
+		inst/grp_covariance_estimation_Pipeline_INNER_K_fu_1389/acc_re_fu_188_reg[15]_fret
+		inst/grp_covariance_estimation_Pipeline_INNER_K_fu_1389/acc_re_fu_188_reg[15]_fret__0
+		inst/grp_covariance_estimation_Pipeline_INNER_K_fu_1389/acc_re_fu_188_reg[17]_fret
+		inst/grp_covariance_estimation_Pipeline_INNER_K_fu_1389/acc_re_fu_188_reg[17]_fret__0
+		inst/grp_covariance_estimation_Pipeline_INNER_K_fu_1389/acc_re_fu_188_reg[19]_fret
+		inst/grp_covariance_estimation_Pipeline_INNER_K_fu_1389/acc_re_fu_188_reg[19]_fret__0
+		inst/grp_covariance_estimation_Pipeline_INNER_K_fu_1389/acc_re_fu_188_reg[1]_fret
+		inst/grp_covariance_estimation_Pipeline_INNER_K_fu_1389/acc_re_fu_188_reg[21]_fret
+		inst/grp_covariance_estimation_Pipeline_INNER_K_fu_1389/acc_re_fu_188_reg[21]_fret__0
+		inst/grp_covariance_estimation_Pipeline_INNER_K_fu_1389/acc_re_fu_188_reg[23]_fret
+		inst/grp_covariance_estimation_Pipeline_INNER_K_fu_1389/acc_re_fu_188_reg[23]_fret__0
+		inst/grp_covariance_estimation_Pipeline_INNER_K_fu_1389/acc_re_fu_188_reg[45]_fret
+		inst/grp_covariance_estimation_Pipeline_INNER_K_fu_1389/acc_re_fu_188_reg[45]_fret__0
+		inst/grp_covariance_estimation_Pipeline_INNER_K_fu_1389/acc_re_fu_188_reg[45]_fret__1
+		inst/grp_covariance_estimation_Pipeline_INNER_K_fu_1389/acc_re_fu_188_reg[45]_fret__2
+		inst/grp_covariance_estimation_Pipeline_INNER_K_fu_1389/acc_re_fu_188_reg[5]_fret
+		inst/grp_covariance_estimation_Pipeline_INNER_K_fu_1389/acc_re_fu_188_reg[5]_fret__0
+		inst/grp_covariance_estimation_Pipeline_INNER_K_fu_1389/acc_re_fu_188_reg[7]_fret
+		inst/grp_covariance_estimation_Pipeline_INNER_K_fu_1389/acc_re_fu_188_reg[7]_fret__0
+		inst/grp_covariance_estimation_Pipeline_INNER_K_fu_1389/acc_re_fu_188_reg[9]_fret
+		inst/grp_covariance_estimation_Pipeline_INNER_K_fu_1389/acc_re_fu_188_reg[9]_fret__0
+		inst/grp_covariance_estimation_Pipeline_WRITE_ROW_WRITE_COL_fu_1335/ap_CS_fsm_reg[1]_fret
+		inst/grp_covariance_estimation_Pipeline_WRITE_ROW_WRITE_COL_fu_1335/ap_enable_reg_pp0_iter2_reg_fret
+		inst/grp_covariance_estimation_Pipeline_WRITE_ROW_WRITE_COL_fu_1335/ap_enable_reg_pp0_iter2_reg_fret__0
+		inst/r_im_1_reg_3014_reg[18]_bret
+		inst/r_im_1_reg_3014_reg[18]_bret__1
+		inst/r_im_1_reg_3014_reg[18]_bret__2
+		inst/r_im_1_reg_3014_reg[22]_bret__1
+		inst/r_im_1_reg_3014_reg[22]_bret__2
+		inst/r_im_1_reg_3014_reg[23]_bret
+		inst/r_im_1_reg_3014_reg[23]_bret__0
+		inst/r_im_1_reg_3014_reg[23]_bret__1
+		inst/r_im_1_reg_3014_reg[23]_bret__2
+		inst/r_im_1_reg_3014_reg[23]_bret__3
+		inst/r_im_1_reg_3014_reg[24]_bret__1
+		inst/r_im_1_reg_3014_reg[26]_bret__1
+		inst/r_im_1_reg_3014_reg[27]_bret
+		inst/r_im_1_reg_3014_reg[27]_bret__1
+		inst/r_im_1_reg_3014_reg[27]_bret__2
+		inst/r_im_1_reg_3014_reg[28]_bret
+		inst/r_im_1_reg_3014_reg[28]_bret__0
+		inst/r_im_1_reg_3014_reg[28]_bret__1
+		inst/r_im_1_reg_3014_reg[28]_bret__2
+		inst/r_im_1_reg_3014_reg[30]_bret
+		inst/r_im_1_reg_3014_reg[30]_bret__0
+		inst/r_im_1_reg_3014_reg[30]_bret__2
+		inst/r_im_1_reg_3014_reg[30]_bret__3
+		inst/r_re_1_reg_2992_reg[18]_bret
+		inst/r_re_1_reg_2992_reg[18]_bret__1
+		inst/r_re_1_reg_2992_reg[18]_bret__2
+		inst/r_re_1_reg_2992_reg[22]_bret__0
+		inst/r_re_1_reg_2992_reg[22]_bret__1
+		inst/r_re_1_reg_2992_reg[23]_bret__0
+		inst/r_re_1_reg_2992_reg[23]_bret__1
+		inst/r_re_1_reg_2992_reg[23]_bret__2
+		inst/r_re_1_reg_2992_reg[23]_bret__3
+		inst/r_re_1_reg_2992_reg[26]_bret__0
+		inst/r_re_1_reg_2992_reg[26]_bret__1
+		inst/r_re_1_reg_2992_reg[26]_bret__2
+		inst/r_re_1_reg_2992_reg[28]_bret
+		inst/r_re_1_reg_2992_reg[28]_bret__0
+		inst/r_re_1_reg_2992_reg[28]_bret__1
+		inst/r_re_1_reg_2992_reg[28]_bret__2
+		inst/r_re_1_reg_2992_reg[31]_bret
+		inst/r_re_1_reg_2992_reg[31]_bret__0
+		inst/r_re_1_reg_2992_reg[31]_bret__1
+		inst/r_re_1_reg_2992_reg[31]_bret__2
+		inst/r_re_1_reg_2992_reg[31]_bret__3
+ 
+
+INFO: [Synth 8-5816] Retiming module `covariance_estimation' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `mvdrr_covariance_estimation_0_0`
+   Worst Slack before retiming is 0.883 ns and worst slack after retiming is 0.883 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `mvdrr_covariance_estimation_0_0' done
+
+
+INFO: [Synth 8-7052] The timing for the instance inst/X_buf_re_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/X_buf_re_1_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/X_buf_re_2_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/X_buf_re_3_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/X_buf_re_4_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/X_buf_re_5_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/X_buf_re_6_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/X_buf_re_7_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/X_buf_re_8_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/X_buf_re_9_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/X_buf_re_10_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/X_buf_re_11_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/X_buf_re_12_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/X_buf_re_13_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/X_buf_re_14_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/X_buf_re_15_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/X_buf_re_16_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/X_buf_re_17_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/X_buf_re_18_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/X_buf_re_19_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/X_buf_re_20_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/X_buf_im_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/X_buf_im_1_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/X_buf_im_2_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/X_buf_im_3_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/X_buf_im_4_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/X_buf_im_5_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/X_buf_im_6_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/X_buf_im_7_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/X_buf_im_8_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/X_buf_im_9_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/X_buf_im_10_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/X_buf_im_11_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/X_buf_im_12_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/X_buf_im_13_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/X_buf_im_14_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/X_buf_im_15_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/X_buf_im_16_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/X_buf_im_17_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/X_buf_im_18_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/X_buf_im_19_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/X_buf_im_20_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:03:11 ; elapsed = 00:04:01 . Memory (MB): peak = 3357.402 ; gain = 1776.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5816] Retiming module `covariance_estimation_mul_5ns_9ns_13_1_1`
+   Worst Slack before retiming is 1.454 ns and worst slack after retiming is 1.454 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `covariance_estimation_mul_5ns_9ns_13_1_1' done
+
+
+INFO: [Synth 8-5816] Retiming module `covariance_estimation_mul_16s_16s_32_1_1__1`
+   Worst Slack before retiming is 1.454 ns and worst slack after retiming is 1.454 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `covariance_estimation_mul_16s_16s_32_1_1__1' done
+
+
+INFO: [Synth 8-5816] Retiming module `covariance_estimation_mul_16s_16s_32_1_1`
+   Worst Slack before retiming is 1.454 ns and worst slack after retiming is 1.454 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `covariance_estimation_mul_16s_16s_32_1_1' done
+
+
+INFO: [Synth 8-5816] Retiming module `covariance_estimation_mac_muladd_16s_16s_32s_33_4_1`
+   Worst Slack before retiming is 1.454 ns and worst slack after retiming is 1.454 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `covariance_estimation_mac_muladd_16s_16s_32s_33_4_1' done
+
+
+INFO: [Synth 8-5816] Retiming module `covariance_estimation_mac_mulsub_16s_16s_32s_32_4_1`
+   Worst Slack before retiming is 1.454 ns and worst slack after retiming is 1.454 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `covariance_estimation_mac_mulsub_16s_16s_32s_32_4_1' done
+
+
+INFO: [Synth 8-5816] Retiming module `covariance_estimation`
+   Worst Slack before retiming is 1.454 ns and worst slack after retiming is 1.454 ns
+   Numbers of local forward move = 4, and local backward move = 0
+
+	Retimed registers names:
+		inst/grp_covariance_estimation_Pipeline_LOAD_SNAPSHOT_LOAD_CHANNEL_fu_1287/ch_fu_172_reg[2]_fret
+		inst/grp_covariance_estimation_Pipeline_LOAD_SNAPSHOT_LOAD_CHANNEL_fu_1287/ch_fu_172_reg[4]_fret
+		inst/grp_covariance_estimation_Pipeline_WRITE_ROW_WRITE_COL_fu_1335/ap_block_pp0_stage0_subdone_grp1_done_reg_reg_fret
+		inst/grp_covariance_estimation_Pipeline_WRITE_ROW_WRITE_COL_fu_1335/ap_enable_reg_pp0_iter2_reg_fret__1
+ 
+
+INFO: [Synth 8-5816] Retiming module `covariance_estimation' done
+
+
+INFO: [Synth 8-5816] Retiming module `mvdrr_covariance_estimation_0_0`
+   Worst Slack before retiming is 1.454 ns and worst slack after retiming is 1.454 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `mvdrr_covariance_estimation_0_0' done
+
+
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:03:23 ; elapsed = 00:04:15 . Memory (MB): peak = 3518.520 ; gain = 1937.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:23 ; elapsed = 00:04:15 . Memory (MB): peak = 3518.520 ; gain = 1937.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:24 ; elapsed = 00:04:17 . Memory (MB): peak = 3518.520 ; gain = 1937.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:24 ; elapsed = 00:04:17 . Memory (MB): peak = 3518.520 ; gain = 1937.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:25 ; elapsed = 00:04:17 . Memory (MB): peak = 3518.520 ; gain = 1937.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:25 ; elapsed = 00:04:18 . Memory (MB): peak = 3518.520 ; gain = 1937.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++----------------------+----------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name           | RTL Name                                                                                                 | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++----------------------+----------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|covariance_estimation | grp_covariance_estimation_Pipeline_WRITE_ROW_WRITE_COL_fu_1335/icmp_ln105_reg_1470_pp0_iter37_reg_reg[0] | 37     | 1     | NO           | NO                 | YES               | 0      | 2       | 
+|covariance_estimation | grp_covariance_estimation_Pipeline_INNER_K_fu_1389/ap_loop_exit_ready_pp0_iter3_reg_reg                  | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++----------------------+----------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+
+Dynamic Shift Register Report:
++------------+-------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name    | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+-------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | mem_reg[14] | 8      | 8          | 8      | 0       | 0      | 0      | 0      | 
+|dsrl__1     | mem_reg[71] | 96     | 96         | 0      | 288     | 0      | 0      | 0      | 
+|dsrl__2     | mem_reg[14] | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
+|dsrl__3     | mem_reg[71] | 1      | 1          | 0      | 3       | 0      | 0      | 0      | 
+|dsrl__4     | mem_reg[14] | 64     | 64         | 64     | 0       | 0      | 0      | 0      | 
++------------+-------------+--------+------------+--------+---------+--------+--------+--------+
+
+
+Retiming Report:
++--------------------+-----+
+|Retiming summary:   |     | 
++--------------------+-----+
+|Forward Retiming    | 57  | 
+|Backward Retiming   | 23  | 
+|New registers added | 128 | 
+|Registers deleted   | 23  | 
++--------------------+-----+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------------------------------------------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                                                 | DSP Mapping     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------------------------------------------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|covariance_estimation_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|covariance_estimation_mul_16s_16s_32_1_1                    | A*B             | 34     | 24     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|covariance_estimation_mac_muladd_16s_16s_32s_33_4_1_DSP48_0 | (C+(A'*B')')'   | 34     | 24     | 58     | -      | 33     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|covariance_estimation_mac_mulsub_16s_16s_32s_32_4_1_DSP48_0 | (C-((A'*B')'))' | 34     | 24     | 58     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|covariance_estimation_mul_5ns_9ns_13_1_1                    | A*B             | 9      | 5      | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------------------------------------------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------------------+------+
+|      |Cell              |Count |
++------+------------------+------+
+|1     |DSP_ALUADD        |     5|
+|2     |DSP_ALUMUX        |     5|
+|3     |DSP_ALUREG        |     5|
+|5     |DSP_A_B_DATA58    |     5|
+|7     |DSP_C_DATA58      |     5|
+|9     |DSP_MULTIPLIER58  |     5|
+|10    |DSP_M_DATA58      |     5|
+|12    |DSP_OUTPUT58      |     5|
+|14    |DSP_PATDET        |     5|
+|15    |DSP_PREADD58      |     5|
+|16    |DSP_PREADD_DATA58 |     5|
+|18    |DSP_SRCMX_OPTINV  |     5|
+|19    |LOOKAHEAD8        |    71|
+|24    |LUT1              |    40|
+|25    |LUT2              |   154|
+|26    |LUT3              |  1176|
+|27    |LUT4              |   524|
+|28    |LUT5              |  1651|
+|29    |LUT6              |  1284|
+|30    |LUT6CY            |   518|
+|31    |LUT6              |    13|
+|32    |RAM32X1S          |  1344|
+|33    |RAMB18E5_INT      |    42|
+|34    |RAMB36E5_INT      |     1|
+|35    |SRL16E            |    72|
+|36    |SRLC32E           |   191|
+|37    |FDRE              |  4940|
+|38    |FDSE              |    80|
++------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:25 ; elapsed = 00:04:18 . Memory (MB): peak = 3518.520 ; gain = 1937.234
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:37 ; elapsed = 00:03:40 . Memory (MB): peak = 3518.520 ; gain = 1663.004
+Synthesis Optimization Complete : Time (s): cpu = 00:03:27 ; elapsed = 00:04:20 . Memory (MB): peak = 3518.520 ; gain = 1937.234
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.333 . Memory (MB): peak = 3518.520 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1923 Unisim elements for replacement
+WARNING: [Netlist 29-151] Pin 'WEBWE[8]' on instance 'inst/gmem_m_axi_U/store_unit_0/buff_wdata/U_fifo_mem/mem_reg_bram_0' of cell type 'RAMB36E5' does not have an equivalent function on the new cell type 'RAMB36E5_INT'. Net 'push_0' that is connected to this pin will not be connected to the replacement instance.
+INFO: [Netlist 29-28] Unisim Transformation completed in 2 CPU seconds
+INFO: [Constraints 18-6358] GCLK_DESKEW_DEFAULT not specified in Clock Expansion Window constraints config file for device xcvc1902.  GCLK Deskew mode will be Off and cannot be enabled via GCLK_DESKEW override.
+INFO: [Constraints 18-5720] The default GCLK Deskew mode is Off.
+INFO: [Device 21-9335] Optimized delay calculation is enabled for this device.
+INFO: [Constraints 18-13227] Created floorplan with Advanced Flow Feature Set
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 3518.520 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1923 instances were transformed.
+  DSP58 => DSP58 (DSP_ALUADD, DSP_ALUMUX, DSP_ALUREG, DSP_A_B_DATA58, DSP_C_DATA58, DSP_MULTIPLIER58, DSP_M_DATA58, DSP_OUTPUT58, DSP_PATDET, DSP_PREADD58, DSP_PREADD_DATA58, DSP_SRCMX_OPTINV, VCC): 5 instances
+  LUT6CY => LUT6CY (LUTCY1, LUTCY2): 518 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 13 instances
+  RAM32X1S => RAM32X1S (RAMS32): 1344 instances
+  RAMB18E5 => RAMB18E5_INT: 42 instances
+  RAMB36E5 => RAMB36E5_INT: 1 instance 
+
+Synth Design complete | Checksum: 7a302640
+INFO: [Common 17-83] Releasing license: Synthesis
+397 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:04:10 ; elapsed = 00:05:13 . Memory (MB): peak = 3518.520 ; gain = 2856.828
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 3518.520 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.runs/mvdrr_covariance_estimation_0_0_synth_1/mvdrr_covariance_estimation_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP mvdrr_covariance_estimation_0_0, cache-ID = 7c22e20678b920ed
+INFO: [Coretcl 2-1174] Renamed 123 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 3518.520 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Deepraj/Desktop/rdbs_mvdr/rdbs_mvdr.runs/mvdrr_covariance_estimation_0_0_synth_1/mvdrr_covariance_estimation_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file mvdrr_covariance_estimation_0_0_utilization_synth.rpt -pb mvdrr_covariance_estimation_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Jun 27 23:18:17 2026...
